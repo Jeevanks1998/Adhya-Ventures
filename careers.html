@@ -70,7 +70,7 @@
             </a>
           </div>
         </div>
-        <a href="careesrs.html">Careers</a>
+        <a href="careers.html">Careers</a>
         <a href="contact.html" class="nav-cta">Contact Us</a>
       </nav>
       <button class="hamburger" id="hamburger" aria-label="Menu">
@@ -199,7 +199,7 @@
       </div>
     </div>
     <div class="footer-bottom">
-      <p>© 2026 Adhya Ventures. All Rights Reserved. | Crafted with excellence | Designed by Jeevan KS</p>
+      <p>© 2025 Adhya Ventures. All Rights Reserved. | Crafted with excellence.</p>
     </div>
   </footer>
 
@@ -207,10 +207,33 @@
   <button class="scroll-top" id="scrollTop"><i class="fa-solid fa-chevron-up"></i></button>
 
   <script>
+    // Navbar scroll behaviour
+    const navbar = document.getElementById('navbar');
+    function updateNavbar() {
+      navbar.classList.toggle('scrolled', window.scrollY > 10);
+    }
+    window.addEventListener('scroll', updateNavbar);
+    updateNavbar(); // run on load
+
     // Hamburger
-    document.getElementById('hamburger').addEventListener('click', () => {
-      document.getElementById('mobileMenu').classList.toggle('open');
+    const hamburger = document.getElementById('hamburger');
+    const mobileMenu = document.getElementById('mobileMenu');
+    hamburger.addEventListener('click', () => {
+      mobileMenu.classList.toggle('open');
+      // Keep navbar solid when menu is open
+      navbar.classList.add('scrolled');
     });
+
+    // Desktop dropdowns
+    document.querySelectorAll('.nav-dropdown').forEach(dd => {
+      dd.addEventListener('mouseenter', () => dd.classList.add('open'));
+      dd.addEventListener('mouseleave', () => dd.classList.remove('open'));
+      dd.querySelector('.nav-dropdown-toggle').addEventListener('click', e => {
+        e.preventDefault();
+        dd.classList.toggle('open');
+      });
+    });
+
     // Scroll to top
     window.addEventListener('scroll', () => {
       document.getElementById('scrollTop').classList.toggle('visible', window.scrollY > 400);
