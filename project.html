@@ -1,0 +1,552 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Our Projects – Adhya Ventures</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="project.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=Barlow:wght@300;400;500;600;700&family=Barlow+Condensed:wght@600;700;800&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+</head>
+<body>
+
+  <!-- FLOATING SOCIALS -->
+  <div class="float-left-stack">
+    <a href="https://wa.me/919353929606" target="_blank" rel="noopener" class="float-btn whatsapp-btn" aria-label="Chat on WhatsApp">
+      <i class="fa-brands fa-whatsapp"></i><span class="float-tooltip">Chat on WhatsApp</span>
+    </a>
+    <a href="tel:+919353929606" class="float-btn phone-btn" aria-label="Call Us">
+      <i class="fa-solid fa-phone"></i><span class="float-tooltip">Call Us</span>
+    </a>
+  </div>
+  <div class="float-right-stack">
+    <a href="https://www.instagram.com/adhya_ventures?igsh=MWRvYWU1NHo0dWZ5Zg==" target="_blank" rel="noopener" class="float-btn instagram-float-btn" aria-label="Follow on Instagram">
+      <i class="fa-brands fa-instagram"></i><span class="float-tooltip float-tooltip-left">@adhyaventures</span>
+    </a>
+  </div>
+
+  <!-- NAVBAR -->
+  <header class="navbar scrolled" id="navbar">
+    <div class="nav-inner">
+      <a href="index.html" class="logo">
+        <img src="adhya-logo.jpeg" alt="Adhya Ventures" class="nav-logo-img"/>
+        <div class="logo-text">
+          <span class="logo-main">Adhya Ventures</span>
+          <span class="logo-sub">Building Strong Foundations</span>
+        </div>
+      </a>
+      <nav class="nav-links">
+        <a href="#home">Home</a>
+        <a href="about.html">About</a>
+        <!-- Services Dropdown -->
+        <div class="nav-dropdown">
+          <a href="services.html" class="nav-dropdown-toggle">Services <i class="fa-solid fa-chevron-down nav-chevron"></i></a>
+          <div class="nav-dropdown-menu">
+            <a href="services.html" class="dropdown-item" data-filter="construction">
+              <i class="fa-solid fa-helmet-safety"></i>
+              <div>
+                <span>Construction Services</span>
+                <small>Residential & Commercial builds</small>
+              </div>
+            </a>
+            <a href="services.html" class="dropdown-item" data-filter="architecture">
+              <i class="fa-solid fa-compass-drafting"></i>
+              <div>
+                <span>Architecture Services</span>
+                <small>Planning, design & visualisation</small>
+              </div>
+            </a>
+            <a href="services.html" class="dropdown-item" data-filter="interior">
+              <i class="fa-solid fa-couch"></i>
+              <div>
+                <span>Interior Design</span>
+                <small>Residential & commercial spaces</small>
+              </div>
+            </a>
+          </div>
+        </div>
+        <!-- Projects Dropdown -->
+        <div class="nav-dropdown">
+          <a href="projects.html" class="nav-dropdown-toggle">Projects <i class="fa-solid fa-chevron-down nav-chevron"></i></a>
+          <div class="nav-dropdown-menu">
+            <a href="projects.html" class="dropdown-item" data-proj="residential">
+              <i class="fa-solid fa-house-chimney"></i>
+              <div>
+                <span>Residential</span>
+                <small>Villas, apartments & homes</small>
+              </div>
+            </a>
+            <a href="projects.html" class="dropdown-item" data-proj="commercial">
+              <i class="fa-solid fa-building"></i>
+              <div>
+                <span>Commercial</span>
+                <small>Offices, retail & business complexes</small>
+              </div>
+            </a>
+          </div>
+        </div>
+        <a href="careesrs.html">Careers</a>
+        <a href="contact.html" class="nav-cta">Contact Us</a>
+      </nav>
+      <button class="hamburger" id="hamburger" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+    <div class="mobile-menu" id="mobileMenu">
+      <a href="#home">Home</a>
+      <a href="about.html">About</a>
+      <a href="services.html">Services</a>
+      <div class="mobile-sub">
+        <a href="services.html">↳ Construction Services</a>
+        <a href="services.html">↳ Architecture Services</a>
+        <a href="services.html">↳ Interior Design</a>
+      </div>
+      <a href="projects.html">Projects</a>
+      <div class="mobile-sub">
+        <a href="projects.html">↳ Residential</a>
+        <a href="projects.html">↳ Commercial</a>
+      </div>
+      <a href="careers.html">Careers</a>
+      <a href="contact.html">Contact Us</a>
+    </div>
+  </header>
+
+  <!-- PAGE HERO -->
+  <section class="pg-hero">
+    <div class="pg-hero__overlay"></div>
+    <div class="container pg-hero__content">
+      <span class="section-label light">Our Portfolio</span>
+      <h1 class="pg-hero__title">Projects We've <span>Built</span></h1>
+      <p class="pg-hero__sub">From quiet neighbourhoods of Bengaluru to the heritage streets of Mysuru — every project is a story of trust, precision, and vision brought to life across Karnataka.</p>
+      <div class="pg-hero__stats">
+        <div class="pg-stat"><span class="pg-stat__num">120+</span><span class="pg-stat__label">Projects Delivered</span></div>
+        <div class="pg-stat__div"></div>
+        <div class="pg-stat"><span class="pg-stat__num">98%</span><span class="pg-stat__label">Client Satisfaction</span></div>
+        <div class="pg-stat__div"></div>
+        <div class="pg-stat"><span class="pg-stat__num">8+</span><span class="pg-stat__label">Years Experience</span></div>
+      </div>
+    </div>
+    <div class="pg-hero__scroll"><i class="fa-solid fa-angles-down"></i></div>
+  </section>
+
+  <!-- FILTER BAR -->
+  <div class="pg-filter-bar">
+    <div class="container pg-filter-bar__inner">
+      <div class="pg-filter-tabs" id="filterTabs">
+        <button class="pg-filter-tab active" data-filter="all"><i class="fa-solid fa-border-all"></i> All Projects</button>
+        <button class="pg-filter-tab" data-filter="residential"><i class="fa-solid fa-house-chimney"></i> Residential</button>
+        <button class="pg-filter-tab" data-filter="commercial"><i class="fa-solid fa-building"></i> Commercial</button>
+        <button class="pg-filter-tab" data-filter="interior"><i class="fa-solid fa-couch"></i> Interior</button>
+      </div>
+      <p class="pg-filter-count"><span id="visibleCount">10</span> projects found</p>
+    </div>
+  </div>
+
+  <!-- PROJECTS GRID -->
+  <section class="pg-showcase">
+    <div class="container">
+      <div class="pg-grid" id="projectGrid">
+
+        <!-- PROJECT 1 -->
+        <article class="pg-card" data-category="residential">
+          <div class="pg-card__img-wrap">
+            <img src="project1.jpg" alt="Gowda Villa" class="pg-card__img"/>
+            <div class="pg-card__img-fallback"><i class="fa-solid fa-image"></i><span>project1.jpg</span></div>
+            <span class="pg-card__badge">Residential</span>
+          </div>
+          <div class="pg-card__body">
+            <h3 class="pg-card__title">Gowda Family Villa</h3>
+            <p class="pg-card__desc">A spacious 4BHK luxury villa with Vastu-aligned layout, landscaped courtyard, and premium stone-finish interiors tailored to a traditional Karnataka sensibility.</p>
+            <div class="pg-card__meta">
+              <span><i class="fa-solid fa-location-dot"></i> Nagadevanahalli, Bengaluru</span>
+              <span><i class="fa-solid fa-ruler-combined"></i> 3,200 sq.ft</span>
+              <span><i class="fa-solid fa-calendar-check"></i> 2024</span>
+            </div>
+            <div class="pg-card__client">
+              <div class="pg-card__avatar">RG</div>
+              <div class="pg-card__client-info">
+                <span class="pg-card__client-label">Client</span>
+                <span class="pg-card__client-name">Ramesh Gowda</span>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!-- PROJECT 2 -->
+        <article class="pg-card" data-category="commercial">
+          <div class="pg-card__img-wrap">
+            <img src="project2.jpg" alt="Hegde Corporate Office" class="pg-card__img"/>
+            <div class="pg-card__img-fallback"><i class="fa-solid fa-image"></i><span>project2.jpg</span></div>
+            <span class="pg-card__badge pg-card__badge--orange">Commercial</span>
+          </div>
+          <div class="pg-card__body">
+            <h3 class="pg-card__title">Hegde Corporate Office</h3>
+            <p class="pg-card__desc">A modern G+3 office building with open-plan floors, executive cabins, dedicated parking, and energy-efficient glazing suited to Bengaluru's tech corridor.</p>
+            <div class="pg-card__meta">
+              <span><i class="fa-solid fa-location-dot"></i> Kengeri, Bengaluru</span>
+              <span><i class="fa-solid fa-ruler-combined"></i> 8,500 sq.ft</span>
+              <span><i class="fa-solid fa-calendar-check"></i> 2024</span>
+            </div>
+            <div class="pg-card__client">
+              <div class="pg-card__avatar">SH</div>
+              <div class="pg-card__client-info">
+                <span class="pg-card__client-label">Client</span>
+                <span class="pg-card__client-name">Suresh Hegde</span>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!-- PROJECT 3 -->
+        <article class="pg-card" data-category="interior">
+          <div class="pg-card__img-wrap">
+            <img src="project3.jpg" alt="Naidu Residence Interiors" class="pg-card__img"/>
+            <div class="pg-card__img-fallback"><i class="fa-solid fa-image"></i><span>project3.jpg</span></div>
+            <span class="pg-card__badge pg-card__badge--teal">Interior</span>
+          </div>
+          <div class="pg-card__body">
+            <h3 class="pg-card__title">Naidu Residence Interiors</h3>
+            <p class="pg-card__desc">Complete home interior with bespoke teak woodwork, false-ceiling lighting design, modular kitchen, and a master suite blending contemporary and traditional Karnataka craft.</p>
+            <div class="pg-card__meta">
+              <span><i class="fa-solid fa-location-dot"></i> Channapatna, Ramanagara</span>
+              <span><i class="fa-solid fa-ruler-combined"></i> 2,600 sq.ft</span>
+              <span><i class="fa-solid fa-calendar-check"></i> 2024</span>
+            </div>
+            <div class="pg-card__client">
+              <div class="pg-card__avatar">VN</div>
+              <div class="pg-card__client-info">
+                <span class="pg-card__client-label">Client</span>
+                <span class="pg-card__client-name">Venkatesh Naidu</span>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!-- PROJECT 4 -->
+        <article class="pg-card" data-category="commercial">
+          <div class="pg-card__img-wrap">
+            <img src="project4.jpg" alt="Nayak Industrial Shed" class="pg-card__img"/>
+            <div class="pg-card__img-fallback"><i class="fa-solid fa-image"></i><span>project4.jpg</span></div>
+            <span class="pg-card__badge pg-card__badge--orange">Commercial</span>
+          </div>
+          <div class="pg-card__body">
+            <h3 class="pg-card__title">Nayak Industrial Shed</h3>
+            <p class="pg-card__desc">A steel-structured industrial shed spanning 1.5 acres with high-bay interiors, loading docks, overhead cranes, and a separate admin block — built on time and on budget.</p>
+            <div class="pg-card__meta">
+              <span><i class="fa-solid fa-location-dot"></i> Tumakuru, Karnataka</span>
+              <span><i class="fa-solid fa-ruler-combined"></i> 22,000 sq.ft</span>
+              <span><i class="fa-solid fa-calendar-check"></i> 2023</span>
+            </div>
+            <div class="pg-card__client">
+              <div class="pg-card__avatar">MN</div>
+              <div class="pg-card__client-info">
+                <span class="pg-card__client-label">Client</span>
+                <span class="pg-card__client-name">Manjunath Nayak</span>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!-- PROJECT 5 -->
+        <article class="pg-card" data-category="residential">
+          <div class="pg-card__img-wrap">
+            <img src="project5.jpg" alt="Iyengar Duplex" class="pg-card__img"/>
+            <div class="pg-card__img-fallback"><i class="fa-solid fa-image"></i><span>project5.jpg</span></div>
+            <span class="pg-card__badge">Residential</span>
+          </div>
+          <div class="pg-card__body">
+            <h3 class="pg-card__title">Iyengar Duplex Home</h3>
+            <p class="pg-card__desc">A double-storey duplex with an open living deck, smart-wiring throughout, and a rooftop garden — built in one of Bengaluru's fastest-growing residential pockets.</p>
+            <div class="pg-card__meta">
+              <span><i class="fa-solid fa-location-dot"></i> Rajarajeshwari Nagar, Bengaluru</span>
+              <span><i class="fa-solid fa-ruler-combined"></i> 2,800 sq.ft</span>
+              <span><i class="fa-solid fa-calendar-check"></i> 2023</span>
+            </div>
+            <div class="pg-card__client">
+              <div class="pg-card__avatar">PI</div>
+              <div class="pg-card__client-info">
+                <span class="pg-card__client-label">Client</span>
+                <span class="pg-card__client-name">Prasanna Iyengar</span>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!-- PROJECT 6 -->
+        <article class="pg-card" data-category="interior">
+          <div class="pg-card__img-wrap">
+            <img src="project6.jpg" alt="Shetty Boutique Studio" class="pg-card__img"/>
+            <div class="pg-card__img-fallback"><i class="fa-solid fa-image"></i><span>project6.jpg</span></div>
+            <span class="pg-card__badge pg-card__badge--teal">Interior</span>
+          </div>
+          <div class="pg-card__body">
+            <h3 class="pg-card__title">Shetty Boutique Studio</h3>
+            <p class="pg-card__desc">A high-end silk and textile showroom interior with custom display niches, heritage-inspired arches, brass fittings, and soft ambient lighting celebrating Karnataka's weaving tradition.</p>
+            <div class="pg-card__meta">
+              <span><i class="fa-solid fa-location-dot"></i> Mysuru, Karnataka</span>
+              <span><i class="fa-solid fa-ruler-combined"></i> 1,600 sq.ft</span>
+              <span><i class="fa-solid fa-calendar-check"></i> 2023</span>
+            </div>
+            <div class="pg-card__client">
+              <div class="pg-card__avatar">KS</div>
+              <div class="pg-card__client-info">
+                <span class="pg-card__client-label">Client</span>
+                <span class="pg-card__client-name">Kavitha Shetty</span>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!-- PROJECT 7 -->
+        <article class="pg-card" data-category="residential">
+          <div class="pg-card__img-wrap">
+            <img src="project7.jpg" alt="Kulkarni Heritage Bungalow" class="pg-card__img"/>
+            <div class="pg-card__img-fallback"><i class="fa-solid fa-image"></i><span>project7.jpg</span></div>
+            <span class="pg-card__badge">Residential</span>
+          </div>
+          <div class="pg-card__body">
+            <h3 class="pg-card__title">Kulkarni Heritage Bungalow</h3>
+            <p class="pg-card__desc">A thoughtful restoration of a 1960s Dharwad bungalow — original Mangalore-tile roof retained, new RCC structure added, interiors modernised while honouring the home's character.</p>
+            <div class="pg-card__meta">
+              <span><i class="fa-solid fa-location-dot"></i> Dharwad, Karnataka</span>
+              <span><i class="fa-solid fa-ruler-combined"></i> 4,400 sq.ft</span>
+              <span><i class="fa-solid fa-calendar-check"></i> 2022</span>
+            </div>
+            <div class="pg-card__client">
+              <div class="pg-card__avatar">AK</div>
+              <div class="pg-card__client-info">
+                <span class="pg-card__client-label">Client</span>
+                <span class="pg-card__client-name">Anand Kulkarni</span>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!-- PROJECT 8 -->
+        <article class="pg-card" data-category="commercial">
+          <div class="pg-card__img-wrap">
+            <img src="project8.jpg" alt="Patil Retail Complex" class="pg-card__img"/>
+            <div class="pg-card__img-fallback"><i class="fa-solid fa-image"></i><span>project8.jpg</span></div>
+            <span class="pg-card__badge pg-card__badge--orange">Commercial</span>
+          </div>
+          <div class="pg-card__body">
+            <h3 class="pg-card__title">Patil Retail Complex</h3>
+            <p class="pg-card__desc">A G+2 mixed-use retail complex housing street-level shops, a first-floor food court, and mezzanine office suites — designed for maximum footfall and natural ventilation.</p>
+            <div class="pg-card__meta">
+              <span><i class="fa-solid fa-location-dot"></i> Hubli, Karnataka</span>
+              <span><i class="fa-solid fa-ruler-combined"></i> 14,000 sq.ft</span>
+              <span><i class="fa-solid fa-calendar-check"></i> 2022</span>
+            </div>
+            <div class="pg-card__client">
+              <div class="pg-card__avatar">BP</div>
+              <div class="pg-card__client-info">
+                <span class="pg-card__client-label">Client</span>
+                <span class="pg-card__client-name">Basavaraj Patil</span>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!-- PROJECT 9 -->
+        <article class="pg-card" data-category="interior">
+          <div class="pg-card__img-wrap">
+            <img src="project9.jpg" alt="Reddy Penthouse Interiors" class="pg-card__img"/>
+            <div class="pg-card__img-fallback"><i class="fa-solid fa-image"></i><span>project9.jpg</span></div>
+            <span class="pg-card__badge pg-card__badge--teal">Interior</span>
+          </div>
+          <div class="pg-card__body">
+            <h3 class="pg-card__title">Reddy Penthouse Interiors</h3>
+            <p class="pg-card__desc">Luxury penthouse fit-out with Italian marble flooring, a statement feature wall, home-theatre room, and a sky-lounge terrace overlooking the Nandi Hills silhouette.</p>
+            <div class="pg-card__meta">
+              <span><i class="fa-solid fa-location-dot"></i> Yelahanka, Bengaluru</span>
+              <span><i class="fa-solid fa-ruler-combined"></i> 3,500 sq.ft</span>
+              <span><i class="fa-solid fa-calendar-check"></i> 2022</span>
+            </div>
+            <div class="pg-card__client">
+              <div class="pg-card__avatar">NR</div>
+              <div class="pg-card__client-info">
+                <span class="pg-card__client-label">Client</span>
+                <span class="pg-card__client-name">Narayan Reddy</span>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!-- PROJECT 10 -->
+        <article class="pg-card" data-category="residential">
+          <div class="pg-card__img-wrap">
+            <img src="project10.jpg" alt="Murthy Eco Farmhouse" class="pg-card__img"/>
+            <div class="pg-card__img-fallback"><i class="fa-solid fa-image"></i><span>project10.jpg</span></div>
+            <span class="pg-card__badge">Residential</span>
+          </div>
+          <div class="pg-card__body">
+            <h3 class="pg-card__title">Murthy Eco Farmhouse</h3>
+            <p class="pg-card__desc">A sustainable weekend retreat using local Kadappa stone, solar panels, rainwater harvesting tanks, and open-to-sky inner courtyards — nestled in the green belt outside Bengaluru.</p>
+            <div class="pg-card__meta">
+              <span><i class="fa-solid fa-location-dot"></i> Bidadi, Ramanagara</span>
+              <span><i class="fa-solid fa-ruler-combined"></i> 4,200 sq.ft</span>
+              <span><i class="fa-solid fa-calendar-check"></i> 2021</span>
+            </div>
+            <div class="pg-card__client">
+              <div class="pg-card__avatar">GM</div>
+              <div class="pg-card__client-info">
+                <span class="pg-card__client-label">Client</span>
+                <span class="pg-card__client-name">Girish Murthy</span>
+              </div>
+            </div>
+          </div>
+        </article>
+
+      </div><!-- /pg-grid -->
+
+      <div class="pg-no-results" id="noResults">
+        <i class="fa-solid fa-folder-open"></i>
+        <p>No projects found for this category.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA BAND -->
+  <section class="pg-cta">
+    <div class="pg-cta__bg"></div>
+    <div class="container pg-cta__inner">
+      <div class="pg-cta__text">
+        <span class="section-label light">Let's Work Together</span>
+        <h2 class="section-title light">Have a Project <span>in Mind?</span></h2>
+        <p>Let's turn your vision into a landmark. Our team across Karnataka is ready to listen, plan, and build something extraordinary for you.</p>
+      </div>
+      <div class="pg-cta__actions">
+        <a href="index.html#contact" class="btn-primary">Start Your Project <i class="fa-solid fa-arrow-right"></i></a>
+        <a href="tel:+919353929606" class="btn-outline"><i class="fa-solid fa-phone"></i> Call Us Now</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <a href="index.html" class="footer-logo-link">
+          <img src="adhya-logo.jpeg" alt="Adhya Ventures" class="footer-logo-img"/>
+        </a>
+        <p>Building strong foundations for tomorrow through innovation, craftsmanship, and excellence.</p>
+        <div class="social-links">
+          <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+          <a href="https://www.instagram.com/adhya_ventures?igsh=MWRvYWU1NHo0dWZ5Zg==" target="_blank" rel="noopener" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+          <a href="#" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+          <a href="#" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h5>Quick Links</h5>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="index.html#about">About Us</a></li>
+          <li><a href="index.html#services">Services</a></li>
+          <li><a href="index.html#packages">Packages</a></li>
+          <li><a href="project.html">Projects</a></li>
+          <li><a href="index.html#contact">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h5>Our Services</h5>
+        <ul>
+          <li><a href="index.html#services">Residential Construction</a></li>
+          <li><a href="index.html#services">Commercial Construction</a></li>
+          <li><a href="index.html#services">Architecture Services</a></li>
+          <li><a href="index.html#services">Interior Design</a></li>
+          <li><a href="index.html#services">Renovation & Remodeling</a></li>
+          <li><a href="index.html#services">Project Management</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h5>Contact Us</h5>
+        <ul class="footer-contact">
+          <li><i class="fa-solid fa-location-dot"></i> #681, 1st Floor, KCHS Layout, Nagadevanahalli Village, Bengaluru – 560056</li>
+          <li><i class="fa-solid fa-phone"></i> <a href="tel:+919353929606" style="color:inherit;text-decoration:none;">9353 929 606</a></li>
+          <li><i class="fa-solid fa-envelope"></i> <a href="mailto:adhyaventures25@gmail.com" style="color:inherit;text-decoration:none;">adhyaventures25@gmail.com</a></li>
+          <li><i class="fa-regular fa-clock"></i> Mon–Sat: 9AM – 6PM</li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2026 Adhya Ventures. All Rights Reserved. | Crafted with excellence | Designed by Jeevan KS</p>
+    </div>
+  </footer>
+
+  <button class="scroll-top" id="scrollTop"><i class="fa-solid fa-chevron-up"></i></button>
+
+  <script>
+    // NAVBAR
+    const navbar = document.getElementById('navbar');
+    window.addEventListener('scroll', () => {
+      navbar.classList.toggle('scrolled', window.scrollY > 60);
+      document.getElementById('scrollTop').classList.toggle('visible', window.scrollY > 400);
+    });
+    document.getElementById('hamburger').addEventListener('click', () => {
+      document.getElementById('mobileMenu').classList.toggle('open');
+    });
+
+    // NAV DROPDOWNS
+    document.addEventListener('click', (e) => {
+      if (!e.target.closest('.nav-dropdown'))
+        document.querySelectorAll('.nav-dropdown').forEach(d => d.classList.remove('open'));
+    });
+    document.querySelectorAll('.nav-dropdown-toggle').forEach(toggle => {
+      toggle.addEventListener('click', (e) => {
+        e.preventDefault();
+        const parent = toggle.closest('.nav-dropdown');
+        document.querySelectorAll('.nav-dropdown').forEach(d => { if (d !== parent) d.classList.remove('open'); });
+        parent.classList.toggle('open');
+      });
+    });
+
+    // IMAGE FALLBACK
+    document.querySelectorAll('.pg-card__img').forEach(img => {
+      const showFallback = () => {
+        img.style.display = 'none';
+        img.nextElementSibling.style.display = 'flex';
+      };
+      img.addEventListener('error', showFallback);
+      if (img.complete && img.naturalWidth === 0) showFallback();
+    });
+
+    // FILTER
+    const tabs     = document.querySelectorAll('.pg-filter-tab');
+    const cards    = document.querySelectorAll('.pg-card');
+    const countEl  = document.getElementById('visibleCount');
+    const noRes    = document.getElementById('noResults');
+
+    const urlParam = new URLSearchParams(window.location.search).get('filter');
+    if (urlParam) applyFilter(urlParam); else applyFilter('all');
+
+    tabs.forEach(tab => tab.addEventListener('click', () => applyFilter(tab.dataset.filter)));
+
+    function applyFilter(filter) {
+      tabs.forEach(t => t.classList.toggle('active', t.dataset.filter === filter));
+      let count = 0;
+      cards.forEach(card => {
+        const show = filter === 'all' || card.dataset.category === filter;
+        card.classList.toggle('pg-card--hidden', !show);
+        if (show) count++;
+      });
+      countEl.textContent = count;
+      noRes.style.display = count === 0 ? 'flex' : 'none';
+    }
+
+    // SCROLL REVEAL
+    const revealObs = new IntersectionObserver((entries) => {
+      entries.forEach(e => {
+        if (e.isIntersecting) { e.target.classList.add('pg-card--visible'); revealObs.unobserve(e.target); }
+      });
+    }, { threshold: 0.1 });
+    cards.forEach(c => revealObs.observe(c));
+
+    // SCROLL TOP
+    document.getElementById('scrollTop').addEventListener('click', () =>
+      window.scrollTo({ top: 0, behavior: 'smooth' })
+    );
+  </script>
+</body>
+</html>
