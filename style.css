@@ -1122,12 +1122,29 @@ textarea.form-input { resize: vertical; }
 }
 .nav-logo-img:hover { opacity: .88; }
 
-/* Loading screen logo */
-.loading-logo-img {
-  max-width: 220px;
-  max-height: 100px;
-  width: auto;
-  object-fit: contain;
+/* Loading screen brand */
+.loading-brand {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6px;
+  margin-bottom: 24px;
+}
+.loading-brand-name {
+  font-family: 'Barlow Condensed', sans-serif;
+  font-weight: 800;
+  font-size: 2.8rem;
+  letter-spacing: .08em;
+  color: #F26513;
+  text-transform: uppercase;
+}
+.loading-brand-sub {
+  font-family: 'Barlow', sans-serif;
+  font-weight: 300;
+  font-size: .78rem;
+  letter-spacing: .28em;
+  text-transform: uppercase;
+  color: rgba(255,255,255,.65);
 }
 
 /* Footer logo */
