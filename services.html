@@ -1,0 +1,661 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Our Services – Adhya Ventures</title>
+  <link rel="stylesheet" href="services.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=Barlow:wght@300;400;500;600;700&family=Barlow+Condensed:wght@600;700;800&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+</head>
+<body>
+
+  <!-- ═══════════════ FLOATING SOCIALS ═══════════════ -->
+  <div class="float-left-stack">
+    <a href="https://wa.me/919353929606" target="_blank" rel="noopener" class="float-btn whatsapp-btn" aria-label="Chat on WhatsApp">
+      <i class="fa-brands fa-whatsapp"></i>
+      <span class="float-tooltip">Chat on WhatsApp</span>
+    </a>
+    <a href="tel:+919353929606" class="float-btn phone-btn" aria-label="Call Us">
+      <i class="fa-solid fa-phone"></i>
+      <span class="float-tooltip">Call Us</span>
+    </a>
+  </div>
+  <div class="float-right-stack">
+    <a href="https://www.instagram.com/adhya_ventures?igsh=MWRvYWU1NHo0dWZ5Zg==" target="_blank" rel="noopener" class="float-btn instagram-float-btn" aria-label="Follow on Instagram">
+      <i class="fa-brands fa-instagram"></i>
+      <span class="float-tooltip float-tooltip-left">@adhyaventures</span>
+    </a>
+  </div>
+
+  <!-- ═══════════════ NAVBAR ═══════════════ -->
+  <header class="navbar scrolled" id="navbar">
+    <div class="nav-inner">
+      <a href="index.html" class="logo">
+        <img src="adhya-logo.jpeg" alt="Adhya Ventures" class="nav-logo-img"/>
+        <div class="logo-text">
+          <span class="logo-main">Adhya Ventures</span>
+          <span class="logo-sub">Building Strong Foundations</span>
+        </div>
+      </a>
+      <nav class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="index.html#about">About</a>
+        <div class="nav-dropdown open">
+          <a href="services.html" class="nav-dropdown-toggle active-page">Services <i class="fa-solid fa-chevron-down nav-chevron"></i></a>
+          <div class="nav-dropdown-menu">
+            <a href="#construction" class="dropdown-item">
+              <i class="fa-solid fa-helmet-safety"></i>
+              <div>
+                <span>Construction Services</span>
+                <small>Residential & Commercial builds</small>
+              </div>
+            </a>
+            <a href="#architecture" class="dropdown-item">
+              <i class="fa-solid fa-compass-drafting"></i>
+              <div>
+                <span>Architecture Services</span>
+                <small>Planning, design & visualisation</small>
+              </div>
+            </a>
+            <a href="#interior" class="dropdown-item">
+              <i class="fa-solid fa-couch"></i>
+              <div>
+                <span>Interior Design</span>
+                <small>Residential & commercial spaces</small>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="nav-dropdown">
+          <a href="index.html#projects" class="nav-dropdown-toggle">Projects <i class="fa-solid fa-chevron-down nav-chevron"></i></a>
+          <div class="nav-dropdown-menu">
+            <a href="index.html#projects" class="dropdown-item" data-proj="residential">
+              <i class="fa-solid fa-house-chimney"></i>
+              <div>
+                <span>Residential</span>
+                <small>Villas, apartments & homes</small>
+              </div>
+            </a>
+            <a href="index.html#projects" class="dropdown-item" data-proj="commercial">
+              <i class="fa-solid fa-building"></i>
+              <div>
+                <span>Commercial</span>
+                <small>Offices, retail & business complexes</small>
+              </div>
+            </a>
+          </div>
+        </div>
+        <a href="index.html#partners">Partners</a>
+        <a href="index.html#contact" class="nav-cta">Contact Us</a>
+      </nav>
+      <button class="hamburger" id="hamburger" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+    <div class="mobile-menu" id="mobileMenu">
+      <a href="index.html">Home</a>
+      <a href="index.html#about">About</a>
+      <a href="services.html">Services</a>
+      <div class="mobile-sub">
+        <a href="#construction">↳ Construction Services</a>
+        <a href="#architecture">↳ Architecture Services</a>
+        <a href="#interior">↳ Interior Design</a>
+      </div>
+      <a href="index.html#projects">Projects</a>
+      <div class="mobile-sub">
+        <a href="index.html#projects">↳ Residential</a>
+        <a href="index.html#projects">↳ Commercial</a>
+      </div>
+      <a href="index.html#partners">Partners</a>
+      <a href="index.html#contact">Contact Us</a>
+    </div>
+  </header>
+
+  <!-- ═══════════════ PAGE HERO ═══════════════ -->
+  <section class="svc-hero">
+    <div class="svc-hero-bg"></div>
+    <div class="svc-hero-overlay"></div>
+    <div class="svc-hero-grid-lines"></div>
+    <div class="container svc-hero-content">
+      <div class="svc-breadcrumb">
+        <a href="index.html"><i class="fa-solid fa-house"></i> Home</a>
+        <span><i class="fa-solid fa-chevron-right"></i></span>
+        <span>Services</span>
+      </div>
+      <div class="section-label light">What We Offer</div>
+      <h1 class="svc-hero-title">Our <span>Services</span></h1>
+      <p class="svc-hero-sub">From architectural vision to the final nail — we craft every project with precision, passion, and an uncompromising commitment to excellence.</p>
+      <div class="svc-hero-pills">
+        <a href="#construction" class="svc-pill"><i class="fa-solid fa-helmet-safety"></i> Construction</a>
+        <a href="#architecture" class="svc-pill"><i class="fa-solid fa-compass-drafting"></i> Architecture</a>
+        <a href="#interior" class="svc-pill"><i class="fa-solid fa-couch"></i> Interior Design</a>
+        <a href="#renovation" class="svc-pill"><i class="fa-solid fa-screwdriver-wrench"></i> Renovation</a>
+        <a href="#management" class="svc-pill"><i class="fa-solid fa-chart-gantt"></i> Project Management</a>
+      </div>
+    </div>
+    <div class="svc-hero-scroll-hint">
+      <span>Scroll to explore</span>
+      <i class="fa-solid fa-chevron-down"></i>
+    </div>
+  </section>
+
+  <!-- ═══════════════ INTRO STRIP ═══════════════ -->
+  <div class="svc-intro-strip">
+    <div class="container">
+      <div class="svc-intro-stats">
+        <div class="svc-istat">
+          <strong>250<span>+</span></strong>
+          <span>Projects Delivered</span>
+        </div>
+        <div class="svc-istat-divider"></div>
+        <div class="svc-istat">
+          <strong>15<span>+</span></strong>
+          <span>Years of Excellence</span>
+        </div>
+        <div class="svc-istat-divider"></div>
+        <div class="svc-istat">
+          <strong>98<span>%</span></strong>
+          <span>Client Satisfaction</span>
+        </div>
+        <div class="svc-istat-divider"></div>
+        <div class="svc-istat">
+          <strong>50<span>+</span></strong>
+          <span>Expert Professionals</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ═══════════════ CONSTRUCTION SERVICES ═══════════════ -->
+  <section class="svc-section" id="construction">
+    <div class="svc-section-accent left"></div>
+    <div class="container">
+      <div class="svc-section-header">
+        <div class="svc-section-label-wrap">
+          <div class="svc-cat-icon"><i class="fa-solid fa-helmet-safety"></i></div>
+          <div class="section-label">Construction Services</div>
+        </div>
+        <h2 class="section-title">Building <span>Dreams</span><br>Into Reality</h2>
+        <p class="svc-section-intro">From ground-breaking to handover, Adhya Ventures manages every phase with rigorous quality control, skilled craftsmen, and transparent communication — delivering structures built to last generations.</p>
+      </div>
+
+      <div class="svc-detail-grid">
+
+        <div class="svc-detail-card reveal" id="residential">
+          <div class="svc-detail-img" style="background-image: url('https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=800&q=80')">
+            <div class="svc-detail-img-overlay"></div>
+            <div class="svc-detail-num">01</div>
+          </div>
+          <div class="svc-detail-body">
+            <div class="svc-detail-icon"><i class="fa-solid fa-house-chimney"></i></div>
+            <h3>Residential Construction</h3>
+            <p>We bring your dream home to life — whether it's a luxury villa, an apartment complex, or a gated community. Every residence is built with premium materials, meticulous craftsmanship, and your lifestyle at the center of every decision.</p>
+            <ul class="svc-feature-list">
+              <li><i class="fa-solid fa-check-circle"></i> Custom Villas & Bungalows</li>
+              <li><i class="fa-solid fa-check-circle"></i> Multi-Storey Apartments</li>
+              <li><i class="fa-solid fa-check-circle"></i> Gated Community Developments</li>
+              <li><i class="fa-solid fa-check-circle"></i> Row Houses & Duplexes</li>
+            </ul>
+            <a href="index.html#contact" class="svc-detail-cta">Get a Quote <i class="fa-solid fa-arrow-right"></i></a>
+          </div>
+        </div>
+
+        <div class="svc-detail-card reveal reverse">
+          <div class="svc-detail-img" style="background-image: url('https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=800&q=80')">
+            <div class="svc-detail-img-overlay"></div>
+            <div class="svc-detail-num">02</div>
+          </div>
+          <div class="svc-detail-body">
+            <div class="svc-detail-icon"><i class="fa-solid fa-building"></i></div>
+            <h3>Commercial Construction</h3>
+            <p>We develop high-performance commercial spaces that project professionalism and support business growth. From sleek office towers to expansive retail complexes, our commercial builds are engineered for efficiency, aesthetics, and longevity.</p>
+            <ul class="svc-feature-list">
+              <li><i class="fa-solid fa-check-circle"></i> Corporate Office Buildings</li>
+              <li><i class="fa-solid fa-check-circle"></i> Retail Spaces & Showrooms</li>
+              <li><i class="fa-solid fa-check-circle"></i> Hotels & Hospitality Complexes</li>
+              <li><i class="fa-solid fa-check-circle"></i> Industrial & Warehouse Facilities</li>
+            </ul>
+            <a href="index.html#contact" class="svc-detail-cta">Get a Quote <i class="fa-solid fa-arrow-right"></i></a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════ ARCHITECTURE SERVICES ═══════════════ -->
+  <section class="svc-section dark" id="architecture">
+    <div class="svc-section-accent right"></div>
+    <div class="container">
+      <div class="svc-section-header light">
+        <div class="svc-section-label-wrap">
+          <div class="svc-cat-icon"><i class="fa-solid fa-compass-drafting"></i></div>
+          <div class="section-label light">Architecture Services</div>
+        </div>
+        <h2 class="section-title light">Designing <span>Spaces</span><br>That Inspire</h2>
+        <p class="svc-section-intro light">Our architecture team translates your vision into breathtaking, functional designs — blending innovation with purpose to create structures that stand as landmarks of their time.</p>
+      </div>
+
+      <div class="svc-arch-grid">
+        <div class="svc-arch-card reveal">
+          <div class="svc-arch-card-top">
+            <div class="svc-arch-icon"><i class="fa-solid fa-pencil-ruler"></i></div>
+            <span class="svc-arch-num">01</span>
+          </div>
+          <h4>Conceptual Design</h4>
+          <p>Translating client vision and site context into compelling architectural concepts — sketches, mood boards, and spatial narratives that set the tone for the entire project.</p>
+          <div class="svc-arch-tags">
+            <span>Schematic Design</span>
+            <span>Site Analysis</span>
+            <span>Concept Boards</span>
+          </div>
+        </div>
+        <div class="svc-arch-card reveal">
+          <div class="svc-arch-card-top">
+            <div class="svc-arch-icon"><i class="fa-solid fa-drafting-compass"></i></div>
+            <span class="svc-arch-num">02</span>
+          </div>
+          <h4>Detailed Planning & Drawings</h4>
+          <p>Comprehensive technical drawings including floor plans, elevations, sections, and structural layouts that serve as the precise blueprint for construction.</p>
+          <div class="svc-arch-tags">
+            <span>Floor Plans</span>
+            <span>Elevations</span>
+            <span>Structural Layouts</span>
+          </div>
+        </div>
+        <div class="svc-arch-card reveal">
+          <div class="svc-arch-card-top">
+            <div class="svc-arch-icon"><i class="fa-solid fa-cube"></i></div>
+            <span class="svc-arch-num">03</span>
+          </div>
+          <h4>3D Visualization & Rendering</h4>
+          <p>Photorealistic 3D renders and walkthroughs that let you experience your future space before a single brick is laid — eliminating uncertainty and aligning expectations.</p>
+          <div class="svc-arch-tags">
+            <span>3D Rendering</span>
+            <span>Virtual Walkthrough</span>
+            <span>Material Preview</span>
+          </div>
+        </div>
+        <div class="svc-arch-card reveal">
+          <div class="svc-arch-card-top">
+            <div class="svc-arch-icon"><i class="fa-solid fa-file-contract"></i></div>
+            <span class="svc-arch-num">04</span>
+          </div>
+          <h4>RERA & Approval Drawings</h4>
+          <p>Expert preparation of all regulatory documents and submission drawings needed for RERA compliance, building permits, and local authority approvals.</p>
+          <div class="svc-arch-tags">
+            <span>RERA Compliance</span>
+            <span>Building Permits</span>
+            <span>Regulatory Submissions</span>
+          </div>
+        </div>
+        <div class="svc-arch-card reveal">
+          <div class="svc-arch-card-top">
+            <div class="svc-arch-icon"><i class="fa-solid fa-leaf"></i></div>
+            <span class="svc-arch-num">05</span>
+          </div>
+          <h4>Sustainable Architecture</h4>
+          <p>Designing energy-efficient, environmentally responsible buildings that reduce ecological footprint while maximising comfort, natural light, and ventilation.</p>
+          <div class="svc-arch-tags">
+            <span>Green Building</span>
+            <span>Energy Efficiency</span>
+            <span>Passive Design</span>
+          </div>
+        </div>
+        <div class="svc-arch-card reveal">
+          <div class="svc-arch-card-top">
+            <div class="svc-arch-icon"><i class="fa-solid fa-arrows-to-dot"></i></div>
+            <span class="svc-arch-num">06</span>
+          </div>
+          <h4>Landscape & Master Planning</h4>
+          <p>Holistic site planning that harmonises buildings with their surroundings — roads, open spaces, landscaping, and utilities working in concert.</p>
+          <div class="svc-arch-tags">
+            <span>Landscaping</span>
+            <span>Site Planning</span>
+            <span>Amenity Zones</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════ INTERIOR DESIGN ═══════════════ -->
+  <section class="svc-section" id="interior">
+    <div class="container">
+      <div class="svc-section-header">
+        <div class="svc-section-label-wrap">
+          <div class="svc-cat-icon"><i class="fa-solid fa-couch"></i></div>
+          <div class="section-label">Interior Design</div>
+        </div>
+        <h2 class="section-title">Spaces That <span>Reflect</span><br>Who You Are</h2>
+        <p class="svc-section-intro">Our interior design team crafts immersive environments that perfectly balance aesthetics with functionality — transforming bare walls into your personal sanctuary or high-performance workspace.</p>
+      </div>
+
+      <div class="svc-interior-showcase">
+        <div class="svc-interior-tabs">
+          <button class="svc-tab active" data-tab="residential-int">Residential</button>
+          <button class="svc-tab" data-tab="commercial-int">Commercial</button>
+        </div>
+
+        <div class="svc-tab-content active" id="residential-int">
+          <div class="svc-interior-grid">
+            <div class="svc-int-card reveal">
+              <div class="svc-int-icon"><i class="fa-solid fa-couch"></i></div>
+              <h4>Living & Dining Spaces</h4>
+              <p>Warm, inviting living rooms and elegant dining areas designed for both everyday comfort and gracious entertaining.</p>
+            </div>
+            <div class="svc-int-card reveal">
+              <div class="svc-int-icon"><i class="fa-solid fa-bed"></i></div>
+              <h4>Bedroom Design</h4>
+              <p>Restful retreats tailored to your style — from minimalist sanctuaries to richly layered master suites with custom joinery.</p>
+            </div>
+            <div class="svc-int-card reveal">
+              <div class="svc-int-icon"><i class="fa-solid fa-utensils"></i></div>
+              <h4>Modular Kitchens</h4>
+              <p>Ergonomic, stylish kitchens with smart storage, premium countertops, and seamless finishes that make cooking a pleasure.</p>
+            </div>
+            <div class="svc-int-card reveal">
+              <div class="svc-int-icon"><i class="fa-solid fa-shower"></i></div>
+              <h4>Bathroom & Spa Design</h4>
+              <p>Luxurious bathrooms with premium fittings, statement tiles, and spa-inspired layouts that elevate your daily routine.</p>
+            </div>
+            <div class="svc-int-card reveal">
+              <div class="svc-int-icon"><i class="fa-solid fa-lightbulb"></i></div>
+              <h4>Lighting Design</h4>
+              <p>Layered lighting solutions — ambient, task, and accent — that create the perfect mood for every room at any hour.</p>
+            </div>
+            <div class="svc-int-card reveal">
+              <div class="svc-int-icon"><i class="fa-solid fa-paint-roller"></i></div>
+              <h4>Material & Finish Selection</h4>
+              <p>Expert curation of flooring, wall textures, fabrics, and surface finishes that bring your aesthetic vision to life cohesively.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="svc-tab-content" id="commercial-int">
+          <div class="svc-interior-grid">
+            <div class="svc-int-card reveal">
+              <div class="svc-int-icon"><i class="fa-solid fa-briefcase"></i></div>
+              <h4>Corporate Offices</h4>
+              <p>Productive, brand-aligned workplaces with collaborative zones, ergonomic workstations, and professional reception areas.</p>
+            </div>
+            <div class="svc-int-card reveal">
+              <div class="svc-int-icon"><i class="fa-solid fa-store"></i></div>
+              <h4>Retail & Showrooms</h4>
+              <p>Engaging retail environments with strategic product flow, impactful visual merchandising, and brand-immersive displays.</p>
+            </div>
+            <div class="svc-int-card reveal">
+              <div class="svc-int-icon"><i class="fa-solid fa-utensils"></i></div>
+              <h4>Restaurants & Cafes</h4>
+              <p>Atmospheric dining spaces with the right acoustics, lighting, and layout to create memorable guest experiences every time.</p>
+            </div>
+            <div class="svc-int-card reveal">
+              <div class="svc-int-icon"><i class="fa-solid fa-hotel"></i></div>
+              <h4>Hospitality Interiors</h4>
+              <p>Luxurious hotel lobbies, guest rooms, and amenity spaces that reflect brand identity and exceed guest expectations.</p>
+            </div>
+            <div class="svc-int-card reveal">
+              <div class="svc-int-icon"><i class="fa-solid fa-people-group"></i></div>
+              <h4>Clubhouses & Common Areas</h4>
+              <p>Vibrant community spaces — gyms, lounges, party halls, and swimming pool decks — designed for active, social living.</p>
+            </div>
+            <div class="svc-int-card reveal">
+              <div class="svc-int-icon"><i class="fa-solid fa-wand-magic-sparkles"></i></div>
+              <h4>Turnkey Interior Solutions</h4>
+              <p>End-to-end delivery from concept to completion — design, procurement, execution, and handover all under one roof.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════ RENOVATION & PROJECT MANAGEMENT ═══════════════ -->
+  <section class="svc-section alt-bg" id="renovation">
+    <div class="container">
+      <div class="svc-twin-grid">
+
+        <!-- Renovation -->
+        <div class="svc-twin-block reveal">
+          <div class="svc-section-label-wrap">
+            <div class="svc-cat-icon"><i class="fa-solid fa-screwdriver-wrench"></i></div>
+            <div class="section-label">Renovation</div>
+          </div>
+          <h2 class="section-title">Renovation &<br><span>Remodeling</span></h2>
+          <p class="svc-twin-desc">Breathe new life into ageing structures. Whether it's a dated apartment, an old office, or a tired commercial property — we transform it into a modern, efficient, and beautiful space while minimising disruption.</p>
+          <ul class="svc-feature-list dark" id="management">
+            <li><i class="fa-solid fa-check-circle"></i> Complete Home Makeovers</li>
+            <li><i class="fa-solid fa-check-circle"></i> Kitchen & Bathroom Upgrades</li>
+            <li><i class="fa-solid fa-check-circle"></i> Office Refurbishments</li>
+            <li><i class="fa-solid fa-check-circle"></i> Structural Repairs & Strengthening</li>
+            <li><i class="fa-solid fa-check-circle"></i> Facade & Exterior Revamps</li>
+          </ul>
+          <a href="index.html#contact" class="btn-primary mt-2">Discuss Your Renovation <i class="fa-solid fa-arrow-right"></i></a>
+        </div>
+
+        <!-- Project Management -->
+        <div class="svc-twin-block reveal">
+          <div class="svc-section-label-wrap">
+            <div class="svc-cat-icon"><i class="fa-solid fa-chart-gantt"></i></div>
+            <div class="section-label">Management</div>
+          </div>
+          <h2 class="section-title">Project<br><span>Management</span></h2>
+          <p class="svc-twin-desc">Great buildings require great coordination. Our project management team oversees every aspect — from procurement and scheduling to quality audits and stakeholder reporting — keeping your project on time and on budget.</p>
+          <ul class="svc-feature-list dark">
+            <li><i class="fa-solid fa-check-circle"></i> End-to-End Project Planning</li>
+            <li><i class="fa-solid fa-check-circle"></i> Vendor & Contractor Management</li>
+            <li><i class="fa-solid fa-check-circle"></i> Quality Assurance & Inspections</li>
+            <li><i class="fa-solid fa-check-circle"></i> Budget Tracking & Cost Control</li>
+            <li><i class="fa-solid fa-check-circle"></i> Regular Client Progress Reports</li>
+          </ul>
+          <a href="index.html#contact" class="btn-primary mt-2">Start a Project <i class="fa-solid fa-arrow-right"></i></a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════ PROCESS ═══════════════ -->
+  <section class="svc-process">
+    <div class="svc-process-bg"></div>
+    <div class="container">
+      <div class="svc-process-header">
+        <div class="section-label light">How We Work</div>
+        <h2 class="section-title light">Our <span>Process</span></h2>
+        <p class="svc-process-intro">A clear, client-centric workflow that ensures transparency, quality, and on-time delivery at every stage.</p>
+      </div>
+      <div class="svc-process-steps">
+        <div class="svc-process-step reveal">
+          <div class="svc-process-num">01</div>
+          <div class="svc-process-icon"><i class="fa-solid fa-comments"></i></div>
+          <h4>Consultation</h4>
+          <p>We begin by understanding your vision, requirements, site conditions, and budget through an in-depth discussion.</p>
+        </div>
+        <div class="svc-process-connector"><i class="fa-solid fa-chevron-right"></i></div>
+        <div class="svc-process-step reveal">
+          <div class="svc-process-num">02</div>
+          <div class="svc-process-icon"><i class="fa-solid fa-pen-ruler"></i></div>
+          <h4>Design & Planning</h4>
+          <p>Our architects and designers develop detailed plans, 3D renders, and material schedules for your approval.</p>
+        </div>
+        <div class="svc-process-connector"><i class="fa-solid fa-chevron-right"></i></div>
+        <div class="svc-process-step reveal">
+          <div class="svc-process-num">03</div>
+          <div class="svc-process-icon"><i class="fa-solid fa-file-signature"></i></div>
+          <h4>Estimation & Agreement</h4>
+          <p>Transparent cost estimation and a clear contract that outlines scope, timeline, milestones, and payment schedule.</p>
+        </div>
+        <div class="svc-process-connector"><i class="fa-solid fa-chevron-right"></i></div>
+        <div class="svc-process-step reveal">
+          <div class="svc-process-num">04</div>
+          <div class="svc-process-icon"><i class="fa-solid fa-helmet-safety"></i></div>
+          <h4>Construction</h4>
+          <p>Skilled professionals execute the build with strict quality control, regular inspections, and proactive problem-solving.</p>
+        </div>
+        <div class="svc-process-connector"><i class="fa-solid fa-chevron-right"></i></div>
+        <div class="svc-process-step reveal">
+          <div class="svc-process-num">05</div>
+          <div class="svc-process-icon"><i class="fa-solid fa-key"></i></div>
+          <h4>Handover & Support</h4>
+          <p>A thorough quality walkthrough before handing over your keys — plus post-handover support for complete peace of mind.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════ CTA ═══════════════ -->
+  <section class="svc-cta">
+    <div class="container">
+      <div class="svc-cta-inner">
+        <div class="svc-cta-left">
+          <div class="section-label">Let's Build Together</div>
+          <h2 class="section-title">Ready to Start<br>Your <span>Project?</span></h2>
+          <p>Tell us about your dream space and let our team create something extraordinary for you. Every great structure begins with a single conversation.</p>
+        </div>
+        <div class="svc-cta-right">
+          <div class="svc-cta-card">
+            <div class="svc-cta-contact-item">
+              <div class="svc-cta-contact-icon"><i class="fa-solid fa-phone"></i></div>
+              <div>
+                <span>Call Us</span>
+                <a href="tel:+919353929606">9353 929 606</a>
+              </div>
+            </div>
+            <div class="svc-cta-contact-item">
+              <div class="svc-cta-contact-icon"><i class="fa-brands fa-whatsapp"></i></div>
+              <div>
+                <span>WhatsApp</span>
+                <a href="https://wa.me/919353929606" target="_blank">Chat with us</a>
+              </div>
+            </div>
+            <div class="svc-cta-contact-item">
+              <div class="svc-cta-contact-icon"><i class="fa-solid fa-envelope"></i></div>
+              <div>
+                <span>Email</span>
+                <a href="mailto:adhyaventures25@gmail.com">adhyaventures25@gmail.com</a>
+              </div>
+            </div>
+            <a href="index.html#contact" class="btn-primary full-width" style="margin-top:8px;">
+              Send Us a Message <i class="fa-solid fa-arrow-right"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════ FOOTER ═══════════════ -->
+  <footer class="footer">
+    <div class="footer-top">
+      <div class="footer-col footer-brand">
+        <a href="index.html" class="footer-logo-link">
+          <img src="adhya-logo.jpeg" alt="Adhya Ventures" class="footer-logo-img"/>
+        </a>
+        <p>Building dreams with precision, quality, and heart. Your trusted partner for every construction and design need in Bengaluru.</p>
+        <div class="footer-socials">
+          <a href="https://www.instagram.com/adhyaventures" target="_blank" rel="noopener" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+          <a href="https://wa.me/919353929606" target="_blank" rel="noopener" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+          <a href="tel:+919353929606" aria-label="Phone"><i class="fa-solid fa-phone"></i></a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h5>Quick Links</h5>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="index.html#about">About Us</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="index.html#packages">Packages</a></li>
+          <li><a href="index.html#projects">Projects</a></li>
+          <li><a href="index.html#contact">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h5>Our Services</h5>
+        <ul>
+          <li><a href="#residential">Residential Construction</a></li>
+          <li><a href="#construction">Commercial Construction</a></li>
+          <li><a href="#architecture">Architecture Services</a></li>
+          <li><a href="#interior">Interior Design</a></li>
+          <li><a href="#renovation">Renovation & Remodeling</a></li>
+          <li><a href="#management">Project Management</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h5>Contact Us</h5>
+        <ul class="footer-contact">
+          <li><i class="fa-solid fa-location-dot"></i> #681, 1st Floor, KCHS Layout, Nagadevanahalli Village, Bengaluru – 560056</li>
+          <li><i class="fa-solid fa-phone"></i> <a href="tel:+919353929606" style="color:inherit;text-decoration:none;">9353 929 606</a></li>
+          <li><i class="fa-solid fa-envelope"></i> <a href="mailto:adhyaventures25@gmail.com" style="color:inherit;text-decoration:none;">adhyaventures25@gmail.com</a></li>
+          <li><i class="fa-regular fa-clock"></i> Mon–Sat: 9AM – 6PM</li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2025 Adhya Ventures. All Rights Reserved. | Crafted with excellence.</p>
+    </div>
+  </footer>
+
+  <!-- Scroll to top -->
+  <button class="scroll-top" id="scrollTop"><i class="fa-solid fa-chevron-up"></i></button>
+
+  <script>
+  // ── NAVBAR SCROLL ──
+  const navbar = document.getElementById('navbar');
+  window.addEventListener('scroll', () => {
+    navbar.classList.toggle('scrolled', window.scrollY > 60);
+    document.getElementById('scrollTop').classList.toggle('visible', window.scrollY > 400);
+  });
+
+  // ── HAMBURGER ──
+  document.getElementById('hamburger').addEventListener('click', () => {
+    document.getElementById('mobileMenu').classList.toggle('open');
+  });
+
+  // ── SCROLL TO TOP ──
+  document.getElementById('scrollTop').addEventListener('click', () => window.scrollTo({ top: 0, behavior: 'smooth' }));
+
+  // ── NAV DROPDOWN ──
+  document.addEventListener('click', (e) => {
+    if (!e.target.closest('.nav-dropdown')) {
+      document.querySelectorAll('.nav-dropdown').forEach(d => d.classList.remove('open'));
+    }
+  });
+  document.querySelectorAll('.nav-dropdown-toggle').forEach(toggle => {
+    toggle.addEventListener('click', (e) => {
+      e.preventDefault();
+      const parent = toggle.closest('.nav-dropdown');
+      document.querySelectorAll('.nav-dropdown').forEach(d => { if (d !== parent) d.classList.remove('open'); });
+      parent.classList.toggle('open');
+    });
+  });
+
+  // ── SCROLL REVEAL ──
+  const revealObserver = new IntersectionObserver((entries) => {
+    entries.forEach(e => {
+      if (e.isIntersecting) {
+        e.target.classList.add('visible');
+        revealObserver.unobserve(e.target);
+      }
+    });
+  }, { threshold: 0.15 });
+  document.querySelectorAll('.reveal').forEach(el => revealObserver.observe(el));
+
+  // ── INTERIOR TABS ──
+  document.querySelectorAll('.svc-tab').forEach(tab => {
+    tab.addEventListener('click', () => {
+      document.querySelectorAll('.svc-tab').forEach(t => t.classList.remove('active'));
+      document.querySelectorAll('.svc-tab-content').forEach(c => c.classList.remove('active'));
+      tab.classList.add('active');
+      document.getElementById(tab.dataset.tab).classList.add('active');
+    });
+  });
+
+  // ── HERO SCROLL HINT ──
+  window.addEventListener('scroll', () => {
+    const hint = document.querySelector('.svc-hero-scroll-hint');
+    if (hint) hint.style.opacity = window.scrollY > 80 ? '0' : '1';
+  });
+  </script>
+</body>
+</html>
