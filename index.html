@@ -1,0 +1,958 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Adhya Ventures – Building Strong Foundations</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=Barlow:wght@300;400;500;600;700&family=Barlow+Condensed:wght@600;700;800&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+</head>
+<body>
+
+  <!-- ═══════════════ LOADING SCREEN ═══════════════ -->
+  <div class="loading-screen" id="loadingScreen">
+    <div class="loading-content">
+      <a href="index.html" class="loading-logo-link">
+        <div class="loading-logo">
+          <img src="C:\Users\jeeva\Downloads" alt="Adhya Ventures Logo" class="loading-logo-img"/>
+        </div>
+      </a>
+      <div class="loading-tagline">Building Strong Foundations</div>
+      <div class="loading-bar-wrap"><div class="loading-bar" id="loadingBar"></div></div>
+      <div class="loading-percent" id="loadingPercent">0%</div>
+    </div>
+    <div class="loading-bricks">
+      <span></span><span></span><span></span><span></span><span></span>
+      <span></span><span></span><span></span><span></span><span></span>
+    </div>
+  </div>
+
+  <!-- ═══════════════ WELCOME POPUP ═══════════════ -->
+  <div class="welcome-overlay" id="welcomeOverlay"></div>
+  <div class="welcome-popup" id="welcomePopup">
+    <button class="welcome-close" id="welcomeClose"><i class="fa-solid fa-xmark"></i></button>
+    <div class="welcome-icon-ring">
+      <i class="fa-solid fa-building-columns"></i>
+    </div>
+    <div class="welcome-hearts">❤️</div>
+    <h3 class="welcome-title">Welcome to Adhya Ventures!</h3>
+    <p class="welcome-msg">We're so glad you're here. Every great space begins with a single step — and you've just taken yours. Thank you for trusting us with your vision. We pour heart, craftsmanship, and dedication into every project we build, and we can't wait to create something extraordinary together.</p>
+    <p class="welcome-sub">Building dreams, one foundation at a time. 🏠</p>
+    <a href="#contact" class="welcome-cta" id="welcomeCtaBtn">Let's Build Together <i class="fa-solid fa-arrow-right"></i></a>
+  </div>
+
+  <!-- ═══════════════ FLOATING SOCIALS ═══════════════ -->
+  <!-- WhatsApp & Phone (left) -->
+  <div class="float-left-stack">
+    <a href="https://wa.me/919353929606" target="_blank" rel="noopener" class="float-btn whatsapp-btn" aria-label="Chat on WhatsApp">
+      <i class="fa-brands fa-whatsapp"></i>
+      <span class="float-tooltip">Chat on WhatsApp</span>
+    </a>
+    <a href="tel:+919353929606" class="float-btn phone-btn" aria-label="Call Us">
+      <i class="fa-solid fa-phone"></i>
+      <span class="float-tooltip">Call Us</span>
+    </a>
+  </div>
+  <!-- Instagram (right) -->
+  <div class="float-right-stack">
+    <a href="https://www.instagram.com/adhyaventures" target="_blank" rel="noopener" class="float-btn instagram-float-btn" aria-label="Follow on Instagram">
+      <i class="fa-brands fa-instagram"></i>
+      <span class="float-tooltip float-tooltip-left">@adhyaventures</span>
+    </a>
+  </div>
+
+  <!-- ═══════════════ NAVBAR ═══════════════ -->
+  <header class="navbar" id="navbar">
+    <div class="nav-inner">
+      <a href="#home" class="logo">
+        <img src="adhya-logo.jpeg" alt="Adhya Ventures" class="nav-logo-img"/>
+      </a>
+      <nav class="nav-links">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <!-- Services Dropdown -->
+        <div class="nav-dropdown">
+          <a href="#services" class="nav-dropdown-toggle">Services <i class="fa-solid fa-chevron-down nav-chevron"></i></a>
+          <div class="nav-dropdown-menu">
+            <a href="#services" class="dropdown-item" data-filter="construction">
+              <i class="fa-solid fa-helmet-safety"></i>
+              <div>
+                <span>Construction Services</span>
+                <small>Residential & Commercial builds</small>
+              </div>
+            </a>
+            <a href="#services" class="dropdown-item" data-filter="architecture">
+              <i class="fa-solid fa-compass-drafting"></i>
+              <div>
+                <span>Architecture Services</span>
+                <small>Planning, design & visualisation</small>
+              </div>
+            </a>
+            <a href="#services" class="dropdown-item" data-filter="interior">
+              <i class="fa-solid fa-couch"></i>
+              <div>
+                <span>Interior Design</span>
+                <small>Residential & commercial spaces</small>
+              </div>
+            </a>
+          </div>
+        </div>
+        <!-- Projects Dropdown -->
+        <div class="nav-dropdown">
+          <a href="#projects" class="nav-dropdown-toggle">Projects <i class="fa-solid fa-chevron-down nav-chevron"></i></a>
+          <div class="nav-dropdown-menu">
+            <a href="#projects" class="dropdown-item" data-proj="residential">
+              <i class="fa-solid fa-house-chimney"></i>
+              <div>
+                <span>Residential</span>
+                <small>Villas, apartments & homes</small>
+              </div>
+            </a>
+            <a href="#projects" class="dropdown-item" data-proj="commercial">
+              <i class="fa-solid fa-building"></i>
+              <div>
+                <span>Commercial</span>
+                <small>Offices, retail & business complexes</small>
+              </div>
+            </a>
+          </div>
+        </div>
+        <a href="#partners">Partners</a>
+        <a href="#contact" class="nav-cta">Contact Us</a>
+      </nav>
+      <button class="hamburger" id="hamburger" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+    <div class="mobile-menu" id="mobileMenu">
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#services">Services</a>
+      <div class="mobile-sub">
+        <a href="#services">↳ Construction Services</a>
+        <a href="#services">↳ Architecture Services</a>
+        <a href="#services">↳ Interior Design</a>
+      </div>
+      <a href="#projects">Projects</a>
+      <div class="mobile-sub">
+        <a href="#projects">↳ Residential</a>
+        <a href="#projects">↳ Commercial</a>
+      </div>
+      <a href="#partners">Partners</a>
+      <a href="#contact">Contact Us</a>
+    </div>
+  </header>
+
+  <!-- ═══════════════ HERO SLIDER ═══════════════ -->
+  <section class="hero" id="home">
+    <div class="hero-slides">
+
+      <div class="slide active" style="--bg:url('https://images.unsplash.com/photo-1486325212027-8081e485255e?w=1800&q=80')">
+        <div class="slide-overlay"></div>
+        <div class="slide-content">
+          <span class="slide-tag">Building Dreams Into Reality</span>
+          <h1>Building Strong<br><span>Foundations</span><br>for Tomorrow</h1>
+          <p>At Adhya Ventures, we transform ideas into exceptional residential and commercial spaces through innovation, quality craftsmanship, and commitment.</p>
+          <div class="hero-btns">
+            <a href="#projects" class="btn-primary">Explore Projects <i class="fa-solid fa-arrow-right"></i></a>
+            <a href="#contact" class="btn-outline">Contact Us</a>
+          </div>
+        </div>
+        <div class="slide-stat-bar">
+          <a href="#about" class="stat">
+            <strong class="counter" data-target="250" data-suffix="+">0+</strong>
+            <span>Projects Delivered</span>
+          </a>
+          <a href="#about" class="stat">
+            <strong class="counter" data-target="15" data-suffix="+">0+</strong>
+            <span>Years Experience</span>
+          </a>
+          <a href="#about" class="stat">
+            <strong class="counter" data-target="98" data-suffix="%">0%</strong>
+            <span>Client Satisfaction</span>
+          </a>
+          <a href="#about" class="stat">
+            <strong class="counter" data-target="50" data-suffix="+">0+</strong>
+            <span>Expert Team Members</span>
+          </a>
+        </div>
+      </div>
+
+      <div class="slide" style="--bg:url('https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=1800&q=80')">
+        <div class="slide-overlay"></div>
+        <div class="slide-content">
+          <span class="slide-tag">Excellence in Construction</span>
+          <h1>Constructing<br><span>Excellence,</span><br>Delivering Trust</h1>
+          <p>From concept to completion, we provide reliable construction solutions tailored to meet your vision, timeline, and budget.</p>
+          <div class="hero-btns">
+            <a href="#services" class="btn-primary">View Services <i class="fa-solid fa-arrow-right"></i></a>
+            <a href="#contact" class="btn-outline">Get a Quote</a>
+          </div>
+        </div>
+        <div class="slide-stat-bar">
+          <a href="#about" class="stat">
+            <strong class="counter" data-target="250" data-suffix="+">0+</strong>
+            <span>Projects Delivered</span>
+          </a>
+          <a href="#about" class="stat">
+            <strong class="counter" data-target="15" data-suffix="+">0+</strong>
+            <span>Years Experience</span>
+          </a>
+          <a href="#about" class="stat">
+            <strong class="counter" data-target="98" data-suffix="%">0%</strong>
+            <span>Client Satisfaction</span>
+          </a>
+          <a href="#about" class="stat">
+            <strong class="counter" data-target="50" data-suffix="+">0+</strong>
+            <span>Expert Team Members</span>
+          </a>
+        </div>
+      </div>
+
+      <div class="slide" style="--bg:url('https://images.unsplash.com/photo-1541888946425-d81bb19240f5?w=1800&q=80')">
+        <div class="slide-overlay"></div>
+        <div class="slide-content">
+          <span class="slide-tag">Creating Iconic Spaces</span>
+          <h1>Engineering<br><span>Spaces</span><br>That Inspire</h1>
+          <p>We create modern living and commercial environments designed to stand the test of time with superior quality and attention to detail.</p>
+          <div class="hero-btns">
+            <a href="#projects" class="btn-primary">Our Projects <i class="fa-solid fa-arrow-right"></i></a>
+            <a href="#contact" class="btn-outline">Schedule Consultation</a>
+          </div>
+        </div>
+        <div class="slide-stat-bar">
+          <a href="#about" class="stat">
+            <strong class="counter" data-target="250" data-suffix="+">0+</strong>
+            <span>Projects Delivered</span>
+          </a>
+          <a href="#about" class="stat">
+            <strong class="counter" data-target="15" data-suffix="+">0+</strong>
+            <span>Years Experience</span>
+          </a>
+          <a href="#about" class="stat">
+            <strong class="counter" data-target="98" data-suffix="%">0%</strong>
+            <span>Client Satisfaction</span>
+          </a>
+          <a href="#about" class="stat">
+            <strong class="counter" data-target="50" data-suffix="+">0+</strong>
+            <span>Expert Team Members</span>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Slider controls -->
+    <div class="slider-controls">
+      <button class="slider-prev" id="sliderPrev"><i class="fa-solid fa-chevron-left"></i></button>
+      <div class="slider-dots" id="sliderDots">
+        <span class="dot active" data-index="0"></span>
+        <span class="dot" data-index="1"></span>
+        <span class="dot" data-index="2"></span>
+      </div>
+      <button class="slider-next" id="sliderNext"><i class="fa-solid fa-chevron-right"></i></button>
+    </div>
+  </section>
+
+  <!-- ═══════════════ ABOUT ═══════════════ -->
+  <section class="about" id="about">
+    <div class="container">
+      <div class="section-label">Who We Are</div>
+      <div class="about-grid">
+        <div class="about-left">
+          <h2 class="section-title">Crafting Spaces<br>That <span>Endure</span></h2>
+          <p class="about-body">Adhya Ventures is a trusted construction and development company specializing in residential, commercial, architectural, and interior solutions. Our mission is to deliver innovative, sustainable, and high-quality spaces that exceed client expectations.</p>
+          <p class="about-body">With a dedicated team of professionals and industry expertise, we ensure every project is completed with precision, transparency, and excellence.</p>
+          <a href="#contact" class="btn-primary mt-2">Work With Us <i class="fa-solid fa-arrow-right"></i></a>
+        </div>
+        <div class="about-right">
+          <div class="why-grid">
+            <div class="why-card">
+              <div class="why-icon"><i class="fa-solid fa-shield-halved"></i></div>
+              <h4>Quality Assurance</h4>
+              <p>Strict standards and premium materials ensuring lasting durability in every build.</p>
+            </div>
+            <div class="why-card">
+              <div class="why-icon"><i class="fa-solid fa-users-gear"></i></div>
+              <h4>Experienced Professionals</h4>
+              <p>Skilled engineers, architects, project managers, and designers on every project.</p>
+            </div>
+            <div class="why-card">
+              <div class="why-icon"><i class="fa-solid fa-clock"></i></div>
+              <h4>On-Time Delivery</h4>
+              <p>Precise project planning and timeline management — we keep our promises.</p>
+            </div>
+            <div class="why-card">
+              <div class="why-icon"><i class="fa-solid fa-eye"></i></div>
+              <h4>Transparent Process</h4>
+              <p>Regular updates and clear communication keep you informed at every stage.</p>
+            </div>
+            <div class="why-card">
+              <div class="why-icon"><i class="fa-solid fa-lightbulb"></i></div>
+              <h4>Innovative Solutions</h4>
+              <p>Modern techniques and creative designs tailored precisely to client needs.</p>
+            </div>
+            <div class="why-card">
+              <div class="why-icon"><i class="fa-solid fa-star"></i></div>
+              <h4>Customer Satisfaction</h4>
+              <p>Our success is measured entirely by the trust and satisfaction of our clients.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════ SERVICES ═══════════════ -->
+  <section class="services" id="services">
+    <div class="container">
+      <div class="section-label light">Our Offerings</div>
+      <h2 class="section-title light">What We Build<br>& <span>Deliver</span></h2>
+      <div class="services-grid">
+        <div class="service-card" data-category="construction">
+          <div class="service-num">01</div>
+          <div class="service-icon"><i class="fa-solid fa-house-chimney"></i></div>
+          <h3>Residential Construction</h3>
+          <p>Building elegant villas, apartments, gated communities, and luxury homes crafted with precision.</p>
+          <a href="#contact" class="service-link">Learn More <i class="fa-solid fa-arrow-right"></i></a>
+        </div>
+        <div class="service-card" data-category="construction">
+          <div class="service-num">02</div>
+          <div class="service-icon"><i class="fa-solid fa-building"></i></div>
+          <h3>Commercial Construction</h3>
+          <p>Developing offices, retail spaces, showrooms, hotels, and large-scale business complexes.</p>
+          <a href="#contact" class="service-link">Learn More <i class="fa-solid fa-arrow-right"></i></a>
+        </div>
+        <div class="service-card" data-category="architecture">
+          <div class="service-num">03</div>
+          <div class="service-icon"><i class="fa-solid fa-compass-drafting"></i></div>
+          <h3>Architecture Services</h3>
+          <p>Innovative architectural planning, design development, and immersive project visualization.</p>
+          <a href="#contact" class="service-link">Learn More <i class="fa-solid fa-arrow-right"></i></a>
+        </div>
+        <div class="service-card" data-category="interior">
+          <div class="service-num">04</div>
+          <div class="service-icon"><i class="fa-solid fa-couch"></i></div>
+          <h3>Interior Design</h3>
+          <p>Creating functional and aesthetically pleasing interiors for both residential and commercial spaces.</p>
+          <a href="#contact" class="service-link">Learn More <i class="fa-solid fa-arrow-right"></i></a>
+        </div>
+        <div class="service-card" data-category="construction">
+          <div class="service-num">05</div>
+          <div class="service-icon"><i class="fa-solid fa-helmet-safety"></i></div>
+          <h3>Renovation & Remodeling</h3>
+          <p>Transforming existing structures into modern, efficient, and beautifully refreshed spaces.</p>
+          <a href="#contact" class="service-link">Learn More <i class="fa-solid fa-arrow-right"></i></a>
+        </div>
+        <div class="service-card" data-category="construction">
+          <div class="service-num">06</div>
+          <div class="service-icon"><i class="fa-solid fa-chart-gantt"></i></div>
+          <h3>Project Management</h3>
+          <p>Comprehensive planning, execution, monitoring, and timely delivery of all construction projects.</p>
+          <a href="#contact" class="service-link">Learn More <i class="fa-solid fa-arrow-right"></i></a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════ OUR PACKAGES ═══════════════ -->
+  <section class="packages" id="packages">
+    <div class="container">
+      <div class="section-label">Pricing</div>
+      <h2 class="section-title">Our <span>Packages</span></h2>
+      <p class="packages-sub">Transparent, value-driven construction packages crafted for every budget and aspiration.</p>
+      <div class="packages-grid">
+
+        <div class="package-card">
+          <div class="pkg-badge">Basic</div>
+          <div class="pkg-icon"><i class="fa-solid fa-house"></i></div>
+          <h3>BASIC PACKAGE</h3>
+          <div class="pkg-price">
+            <span class="pkg-starts">Starts @</span>
+            <strong>₹1,949<small>/Sqft</small></strong>
+          </div>
+          <ul class="pkg-features">
+            <li><i class="fa-solid fa-check"></i> Standard Materials</li>
+            <li><i class="fa-solid fa-check"></i> Structural Work</li>
+            <li><i class="fa-solid fa-check"></i> Basic Flooring</li>
+            <li><i class="fa-solid fa-check"></i> Electrical & Plumbing</li>
+            <li><i class="fa-solid fa-check"></i> Painting (2 coats)</li>
+          </ul>
+          <a href="https://shanthaventures.com/#contact-us" class="btn-pkg" target="_blank">KNOW MORE <i class="fa-solid fa-arrow-right"></i></a>
+        </div>
+
+        <div class="package-card featured">
+          <div class="pkg-badge popular">Most Popular</div>
+          <div class="pkg-icon"><i class="fa-solid fa-building"></i></div>
+          <h3>PREMIUM PACKAGE</h3>
+          <div class="pkg-price">
+            <span class="pkg-starts">Starts @</span>
+            <strong>₹2,449<small>/Sqft</small></strong>
+          </div>
+          <ul class="pkg-features">
+            <li><i class="fa-solid fa-check"></i> Premium Materials</li>
+            <li><i class="fa-solid fa-check"></i> Enhanced Structural Work</li>
+            <li><i class="fa-solid fa-check"></i> Vitrified Flooring</li>
+            <li><i class="fa-solid fa-check"></i> Concealed Electrical</li>
+            <li><i class="fa-solid fa-check"></i> Modular Kitchen</li>
+            <li><i class="fa-solid fa-check"></i> Branded Sanitaryware</li>
+          </ul>
+          <a href="https://shanthaventures.com/#contact-us" class="btn-pkg" target="_blank">KNOW MORE <i class="fa-solid fa-arrow-right"></i></a>
+        </div>
+
+        <div class="package-card">
+          <div class="pkg-badge">Luxury</div>
+          <div class="pkg-icon"><i class="fa-solid fa-gem"></i></div>
+          <h3>LUXURY PACKAGE</h3>
+          <div class="pkg-price">
+            <span class="pkg-starts">Starts @</span>
+            <strong>₹3,349<small>/Sqft</small></strong>
+          </div>
+          <ul class="pkg-features">
+            <li><i class="fa-solid fa-check"></i> Luxury Grade Materials</li>
+            <li><i class="fa-solid fa-check"></i> Imported Marble / Italian Tiles</li>
+            <li><i class="fa-solid fa-check"></i> Full Interior Design</li>
+            <li><i class="fa-solid fa-check"></i> Smart Home Features</li>
+            <li><i class="fa-solid fa-check"></i> Premium Fixtures</li>
+            <li><i class="fa-solid fa-check"></i> Landscaping Included</li>
+          </ul>
+          <a href="https://shanthaventures.com/#contact-us" class="btn-pkg" target="_blank">KNOW MORE <i class="fa-solid fa-arrow-right"></i></a>
+        </div>
+
+        <div class="package-card ultra">
+          <div class="pkg-badge ultra-badge">Ultra Luxury</div>
+          <div class="pkg-icon"><i class="fa-solid fa-crown"></i></div>
+          <h3>ULTRA LUXURY PACKAGE</h3>
+          <div class="pkg-price">
+            <span class="pkg-starts">Starts @</span>
+            <strong>₹4,999<small>/Sqft</small></strong>
+          </div>
+          <div class="pkg-note-tag"><i class="fa-solid fa-info-circle"></i> Limited Interior Included</div>
+          <ul class="pkg-features">
+            <li><i class="fa-solid fa-check"></i> World-Class Materials</li>
+            <li><i class="fa-solid fa-check"></i> Bespoke Architecture</li>
+            <li><i class="fa-solid fa-check"></i> Full Interior Consultation</li>
+            <li><i class="fa-solid fa-check"></i> Home Automation</li>
+            <li><i class="fa-solid fa-check"></i> Dedicated Project Manager</li>
+            <li><i class="fa-solid fa-check"></i> Post-Handover Support</li>
+          </ul>
+          <a href="https://shanthaventures.com/#contact-us" class="btn-pkg" target="_blank">KNOW MORE <i class="fa-solid fa-arrow-right"></i></a>
+        </div>
+
+      </div>
+      <p class="pkg-disclaimer"><i class="fa-solid fa-circle-info"></i> Note: Above prices may vary based on client requirements, site conditions, and material selection.</p>
+    </div>
+  </section>
+
+  <!-- ═══════════════ OUR APPROACH ═══════════════ -->
+  <section class="approach" id="approach">
+    <div class="approach-bg-pattern"></div>
+    <div class="container">
+      <div class="section-label">How We Work</div>
+      <h2 class="section-title">Our <span>Approach</span></h2>
+      <p class="approach-intro">Every project is a journey. We follow a disciplined, transparent process that transforms your vision into a lasting reality — step by step, brick by brick.</p>
+
+      <div class="approach-timeline">
+
+        <div class="approach-node" data-step="01">
+          <div class="node-connector"></div>
+          <div class="node-badge">01</div>
+          <div class="node-card">
+            <div class="node-icon-wrap">
+              <div class="node-icon-hex">
+                <i class="fa-solid fa-magnifying-glass-chart"></i>
+              </div>
+            </div>
+            <div class="node-content">
+              <h4>Discovery &amp; Planning</h4>
+              <p>We begin with in-depth consultation, site evaluation, and detailed project scoping to align with your vision and budget.</p>
+              <div class="node-tags">
+                <span>Site Survey</span><span>Budgeting</span><span>Vision Mapping</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="approach-node reverse" data-step="02">
+          <div class="node-connector"></div>
+          <div class="node-badge">02</div>
+          <div class="node-card">
+            <div class="node-icon-wrap">
+              <div class="node-icon-hex">
+                <i class="fa-solid fa-pen-ruler"></i>
+              </div>
+            </div>
+            <div class="node-content">
+              <h4>Design &amp; Engineering</h4>
+              <p>Our architects and engineers develop precise blueprints, 3D visualizations, and structural plans with zero compromise on quality.</p>
+              <div class="node-tags">
+                <span>3D Rendering</span><span>Structural Plans</span><span>Approvals</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="approach-node" data-step="03">
+          <div class="node-connector"></div>
+          <div class="node-badge">03</div>
+          <div class="node-card">
+            <div class="node-icon-wrap">
+              <div class="node-icon-hex">
+                <i class="fa-solid fa-truck-moving"></i>
+              </div>
+            </div>
+            <div class="node-content">
+              <h4>Procurement &amp; Groundwork</h4>
+              <p>We source premium certified materials and prepare the site with thorough groundwork before breaking ground.</p>
+              <div class="node-tags">
+                <span>Material Sourcing</span><span>Site Prep</span><span>Quality Checks</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="approach-node reverse" data-step="04">
+          <div class="node-connector"></div>
+          <div class="node-badge">04</div>
+          <div class="node-card">
+            <div class="node-icon-wrap">
+              <div class="node-icon-hex">
+                <i class="fa-solid fa-screwdriver-wrench"></i>
+              </div>
+            </div>
+            <div class="node-content">
+              <h4>Construction &amp; Execution</h4>
+              <p>Skilled teams execute every phase with precision, adhering to timelines and maintaining rigorous quality control throughout.</p>
+              <div class="node-tags">
+                <span>Timeline Tracking</span><span>Quality Control</span><span>Progress Reports</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="approach-node" data-step="05">
+          <div class="node-badge last">05</div>
+          <div class="node-card">
+            <div class="node-icon-wrap">
+              <div class="node-icon-hex">
+                <i class="fa-solid fa-clipboard-check"></i>
+              </div>
+            </div>
+            <div class="node-content">
+              <h4>Quality Audit &amp; Handover</h4>
+              <p>Final inspections, snag resolution, and a thorough walkthrough ensure your space exceeds expectations at handover.</p>
+              <div class="node-tags">
+                <span>Final Inspection</span><span>Snag Fixing</span><span>Key Handover</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════ QUOTES SLIDER ═══════════════ -->
+  <section class="quotes-section" id="quotes">
+    <div class="quotes-overlay"></div>
+    <div class="container quotes-container">
+      <div class="section-label light">Words That Build</div>
+      <h2 class="section-title light">Wisdom from the<br><span>World of Construction</span></h2>
+      <div class="quotes-slider-wrap">
+        <div class="quotes-track" id="quotesTrack">
+          <div class="quote-slide">
+            <div class="quote-icon"><i class="fa-solid fa-quote-left"></i></div>
+            <blockquote>"We shape our buildings; thereafter they shape us."</blockquote>
+            <cite>— Winston Churchill</cite>
+          </div>
+          <div class="quote-slide">
+            <div class="quote-icon"><i class="fa-solid fa-quote-left"></i></div>
+            <blockquote>"Architecture is the learned game, correct and magnificent, of forms assembled in the light."</blockquote>
+            <cite>— Le Corbusier</cite>
+          </div>
+          <div class="quote-slide">
+            <div class="quote-icon"><i class="fa-solid fa-quote-left"></i></div>
+            <blockquote>"The details are not the details. They make the design."</blockquote>
+            <cite>— Charles Eames</cite>
+          </div>
+          <div class="quote-slide">
+            <div class="quote-icon"><i class="fa-solid fa-quote-left"></i></div>
+            <blockquote>"A great building must begin with the unmeasurable, pass through measurable means when it is being designed, and in the end be unmeasurable."</blockquote>
+            <cite>— Louis Kahn</cite>
+          </div>
+          <div class="quote-slide">
+            <div class="quote-icon"><i class="fa-solid fa-quote-left"></i></div>
+            <blockquote>"Build something that stands the test of time. Build it right, or don't build it at all."</blockquote>
+            <cite>— Construction Proverb</cite>
+          </div>
+        </div>
+        <div class="quotes-nav">
+          <button class="q-prev" id="qPrev"><i class="fa-solid fa-chevron-left"></i></button>
+          <div class="quotes-dots" id="quotesDots"></div>
+          <button class="q-next" id="qNext"><i class="fa-solid fa-chevron-right"></i></button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════ PROJECTS GALLERY ═══════════════ -->
+  <section class="projects" id="projects">
+    <div class="container">
+      <div class="section-label">Our Portfolio</div>
+      <h2 class="section-title">Featured<br><span>Projects</span></h2>
+      <div class="projects-grid">
+        <div class="project-card large">
+          <!-- ADD YOUR IMAGE: Set src="your-image.jpg" inside an <img> tag, replacing the placeholder below -->
+          <a href="YOUR_PROJECT_1_LINK_HERE" class="project-img-link">
+            <div class="project-img-placeholder"><i class="fa-solid fa-image"></i><span>Add Project Image</span></div>
+          </a>
+          <div class="project-overlay">
+            <span class="project-cat">Residential</span>
+            <h3>Adhya Elite Villas</h3>
+            <p>Premium gated community — 48 luxury villas, Bengaluru</p>
+            <a href="YOUR_PROJECT_1_LINK_HERE" class="project-link">View Details <i class="fa-solid fa-arrow-right"></i></a>
+          </div>
+        </div>
+        <div class="project-card">
+          <a href="YOUR_PROJECT_2_LINK_HERE" class="project-img-link">
+            <div class="project-img-placeholder"><i class="fa-solid fa-image"></i><span>Add Project Image</span></div>
+          </a>
+          <div class="project-overlay">
+            <span class="project-cat">Commercial</span>
+            <h3>Adhya Business Hub</h3>
+            <p>Class-A office complex, 2.2 lakh sq.ft.</p>
+            <a href="YOUR_PROJECT_2_LINK_HERE" class="project-link">View Details <i class="fa-solid fa-arrow-right"></i></a>
+          </div>
+        </div>
+        <div class="project-card">
+          <a href="YOUR_PROJECT_3_LINK_HERE" class="project-img-link">
+            <div class="project-img-placeholder"><i class="fa-solid fa-image"></i><span>Add Project Image</span></div>
+          </a>
+          <div class="project-overlay">
+            <span class="project-cat">Residential</span>
+            <h3>Skyline Heights</h3>
+            <p>High-rise residential tower, 120 apartments</p>
+            <a href="YOUR_PROJECT_3_LINK_HERE" class="project-link">View Details <i class="fa-solid fa-arrow-right"></i></a>
+          </div>
+        </div>
+        <div class="project-card">
+          <a href="YOUR_PROJECT_4_LINK_HERE" class="project-img-link">
+            <div class="project-img-placeholder"><i class="fa-solid fa-image"></i><span>Add Project Image</span></div>
+          </a>
+          <div class="project-overlay">
+            <span class="project-cat">Renovation</span>
+            <h3>Heritage Revive</h3>
+            <p>Luxury heritage bungalow restoration</p>
+            <a href="YOUR_PROJECT_4_LINK_HERE" class="project-link">View Details <i class="fa-solid fa-arrow-right"></i></a>
+          </div>
+        </div>
+        <div class="project-card">
+          <a href="YOUR_PROJECT_5_LINK_HERE" class="project-img-link">
+            <div class="project-img-placeholder"><i class="fa-solid fa-image"></i><span>Add Project Image</span></div>
+          </a>
+          <div class="project-overlay">
+            <span class="project-cat">Interior Design</span>
+            <h3>Adhya Premium Interiors</h3>
+            <p>Full turnkey interior for 80-unit residential complex</p>
+            <a href="YOUR_PROJECT_5_LINK_HERE" class="project-link">View Details <i class="fa-solid fa-arrow-right"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════ PARTNERS LOGO SLIDER ═══════════════ -->
+  <section class="partners" id="partners">
+    <div class="container">
+      <div class="section-label">Collaborations</div>
+      <h2 class="section-title">Trusted By<br><span>Industry Leaders</span></h2>
+      <p class="partners-sub">We collaborate with leading suppliers, architects, engineering consultants, construction material manufacturers, and technology partners to deliver exceptional projects.</p>
+    </div>
+    <div class="partners-slider-wrap">
+      <div class="partners-track" id="partnersTrack">
+        <div class="partner-logo"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8d/UltraTech_Cement_Logo.svg/200px-UltraTech_Cement_Logo.svg.png" alt="UltraTech Cement" onerror="this.style.display='none';this.nextSibling.style.display='flex'"/><span class="partner-fallback" style="display:none"><i class="fa-solid fa-industry"></i>UltraTech Cement</span><span>UltraTech Cement</span></div>
+        <div class="partner-logo"><i class="fa-solid fa-industry"></i><span>ACC Cement</span></div>
+        <div class="partner-logo"><i class="fa-solid fa-gear"></i><span>JSW Steel</span></div>
+        <div class="partner-logo"><i class="fa-solid fa-gear"></i><span>Tata Steel</span></div>
+        <div class="partner-logo"><i class="fa-solid fa-layer-group"></i><span>Kajaria Tiles</span></div>
+        <div class="partner-logo"><i class="fa-solid fa-paint-roller"></i><span>Asian Paints</span></div>
+        <div class="partner-logo"><i class="fa-solid fa-paint-roller"></i><span>Berger Paints</span></div>
+        <div class="partner-logo"><i class="fa-solid fa-faucet"></i><span>Hindware</span></div>
+        <div class="partner-logo"><i class="fa-solid fa-faucet-drip"></i><span>Jaquar</span></div>
+        <div class="partner-logo"><i class="fa-solid fa-bolt"></i><span>Havells</span></div>
+        <div class="partner-logo"><i class="fa-solid fa-plug"></i><span>Schneider Electric</span></div>
+        <div class="partner-logo"><i class="fa-solid fa-window-restore"></i><span>Saint-Gobain</span></div>
+        <div class="partner-logo"><i class="fa-solid fa-tree"></i><span>Greenply</span></div>
+        <div class="partner-logo"><i class="fa-solid fa-layer-group"></i><span>Somany Ceramics</span></div>
+        <!-- duplicates for seamless loop -->
+        <div class="partner-logo"><i class="fa-solid fa-industry"></i><span>UltraTech Cement</span></div>
+        <div class="partner-logo"><i class="fa-solid fa-industry"></i><span>ACC Cement</span></div>
+        <div class="partner-logo"><i class="fa-solid fa-gear"></i><span>JSW Steel</span></div>
+        <div class="partner-logo"><i class="fa-solid fa-gear"></i><span>Tata Steel</span></div>
+        <div class="partner-logo"><i class="fa-solid fa-layer-group"></i><span>Kajaria Tiles</span></div>
+        <div class="partner-logo"><i class="fa-solid fa-paint-roller"></i><span>Asian Paints</span></div>
+        <div class="partner-logo"><i class="fa-solid fa-paint-roller"></i><span>Berger Paints</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════ CONTACT CTA ═══════════════ -->
+  <section class="contact-cta" id="contact">
+    <div class="cta-bg"></div>
+    <div class="container cta-inner">
+      <div class="cta-left">
+        <div class="section-label light">Let's Build Together</div>
+        <h2 class="section-title light">Ready to Start Your<br><span>Next Project?</span></h2>
+        <p>Tell us about your vision and our team will get back to you within 24 hours with a tailored consultation plan.</p>
+        <div class="contact-info-list">
+          <div class="contact-item">
+            <i class="fa-solid fa-location-dot"></i>
+            <span>#681, 1st Floor, Kalyan Guruha Nirman Co-operative Society, Nagadevanahalli Village, KCHS Layout, Bengaluru – 560056</span>
+          </div>
+          <div class="contact-item">
+            <i class="fa-solid fa-phone"></i>
+            <a href="tel:+919353929606" class="contact-link">9353 929 606</a>
+          </div>
+          <div class="contact-item">
+            <i class="fa-solid fa-envelope"></i>
+            <a href="mailto:adhyaventures25@gmail.com" class="contact-link">adhyaventures25@gmail.com</a>
+          </div>
+        </div>
+        <!-- Instagram Follow -->
+        <div class="instagram-cta">
+          <a href="https://www.instagram.com/adhyaventures" target="_blank" rel="noopener" class="instagram-btn">
+            <i class="fa-brands fa-instagram"></i>
+            <div>
+              <span>Follow Us on Instagram</span>
+              <small>@adhyaventures</small>
+            </div>
+            <i class="fa-solid fa-arrow-right ig-arrow"></i>
+          </a>
+        </div>
+      </div>
+      <div class="cta-right">
+        <div class="contact-form-card">
+          <h3>Get a Free Consultation</h3>
+          <div class="form-group">
+            <input type="text" placeholder="Your Full Name" class="form-input"/>
+          </div>
+          <div class="form-group">
+            <input type="email" placeholder="Email Address" class="form-input"/>
+          </div>
+          <div class="form-group">
+            <input type="tel" placeholder="Phone Number" class="form-input"/>
+          </div>
+          <div class="form-group">
+            <select class="form-input">
+              <option value="">Select Service</option>
+              <option>Residential Construction</option>
+              <option>Commercial Construction</option>
+              <option>Architecture Services</option>
+              <option>Interior Design</option>
+              <option>Renovation & Remodeling</option>
+              <option>Project Management</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <textarea placeholder="Tell us about your project..." class="form-input" rows="3"></textarea>
+          </div>
+          <button class="btn-primary full-width">Send Enquiry <i class="fa-solid fa-paper-plane"></i></button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════ FOOTER ═══════════════ -->
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <a href="#home" class="footer-logo-link">
+          <img src="adhya-logo.jpeg" alt="Adhya Ventures" class="footer-logo-img"/>
+        </a>
+        <p>Building strong foundations for tomorrow through innovation, craftsmanship, and excellence.</p>
+        <div class="social-links">
+          <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+          <a href="https://www.instagram.com/adhyaventures" target="_blank" rel="noopener" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+          <a href="#" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+          <a href="#" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h5>Quick Links</h5>
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About Us</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#packages">Packages</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h5>Our Services</h5>
+        <ul>
+          <li><a href="#services">Residential Construction</a></li>
+          <li><a href="#services">Commercial Construction</a></li>
+          <li><a href="#services">Architecture Services</a></li>
+          <li><a href="#services">Interior Design</a></li>
+          <li><a href="#services">Renovation & Remodeling</a></li>
+          <li><a href="#services">Project Management</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h5>Contact Us</h5>
+        <ul class="footer-contact">
+          <li><i class="fa-solid fa-location-dot"></i> #681, 1st Floor, KCHS Layout, Nagadevanahalli Village, Bengaluru – 560056</li>
+          <li><i class="fa-solid fa-phone"></i> <a href="tel:+919353929606" style="color:inherit;text-decoration:none;">9353 929 606</a></li>
+          <li><i class="fa-solid fa-envelope"></i> <a href="mailto:adhyaventures25@gmail.com" style="color:inherit;text-decoration:none;">adhyaventures25@gmail.com</a></li>
+          <li><i class="fa-regular fa-clock"></i> Mon–Sat: 9AM – 6PM</li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2025 Adhya Ventures. All Rights Reserved. | Crafted with excellence.</p>
+    </div>
+  </footer>
+
+  <!-- Scroll to top -->
+  <button class="scroll-top" id="scrollTop"><i class="fa-solid fa-chevron-up"></i></button>
+
+  <script>
+  // ── NAVBAR SCROLL ──
+  const navbar = document.getElementById('navbar');
+  window.addEventListener('scroll', () => {
+    navbar.classList.toggle('scrolled', window.scrollY > 60);
+    document.getElementById('scrollTop').classList.toggle('visible', window.scrollY > 400);
+  });
+
+  // ── HAMBURGER ──
+  document.getElementById('hamburger').addEventListener('click', () => {
+    document.getElementById('mobileMenu').classList.toggle('open');
+  });
+
+  // ── HERO SLIDER ──
+  let currentSlide = 0;
+  const slides = document.querySelectorAll('.slide');
+  const dots = document.querySelectorAll('.dot');
+  let autoTimer;
+
+  function goToSlide(n) {
+    slides[currentSlide].classList.remove('active');
+    dots[currentSlide].classList.remove('active');
+    currentSlide = (n + slides.length) % slides.length;
+    slides[currentSlide].classList.add('active');
+    dots[currentSlide].classList.add('active');
+    // Trigger counter animation on every slide change
+    animateCounters();
+  }
+  function startAuto() { autoTimer = setInterval(() => goToSlide(currentSlide + 1), 5500); }
+  function resetAuto() { clearInterval(autoTimer); startAuto(); }
+
+  document.getElementById('sliderNext').addEventListener('click', () => { goToSlide(currentSlide + 1); resetAuto(); });
+  document.getElementById('sliderPrev').addEventListener('click', () => { goToSlide(currentSlide - 1); resetAuto(); });
+  dots.forEach(d => d.addEventListener('click', () => { goToSlide(+d.dataset.index); resetAuto(); }));
+  startAuto();
+
+  // ── COUNTER ANIMATION ──
+  function animateCounters() {
+    document.querySelectorAll('.counter').forEach(el => {
+      const target = +el.dataset.target;
+      const suffix = el.dataset.suffix || '';
+      const duration = 1600;
+      const start = performance.now();
+      function update(now) {
+        const elapsed = now - start;
+        const progress = Math.min(elapsed / duration, 1);
+        const ease = 1 - Math.pow(1 - progress, 3);
+        el.textContent = Math.floor(ease * target) + suffix;
+        if (progress < 1) requestAnimationFrame(update);
+      }
+      requestAnimationFrame(update);
+    });
+  }
+  // Run on load
+  window.addEventListener('load', animateCounters);
+
+  // ── QUOTES SLIDER ──
+  let qCurrent = 0;
+  const qSlides = document.querySelectorAll('.quote-slide');
+  const qTrack = document.getElementById('quotesTrack');
+  const qDotsWrap = document.getElementById('quotesDots');
+  qSlides.forEach((_, i) => {
+    const d = document.createElement('span');
+    d.className = 'q-dot' + (i === 0 ? ' active' : '');
+    d.addEventListener('click', () => goToQuote(i));
+    qDotsWrap.appendChild(d);
+  });
+  function goToQuote(n) {
+    qCurrent = (n + qSlides.length) % qSlides.length;
+    qTrack.style.transform = `translateX(-${qCurrent * 100}%)`;
+    document.querySelectorAll('.q-dot').forEach((d, i) => d.classList.toggle('active', i === qCurrent));
+  }
+  document.getElementById('qNext').addEventListener('click', () => goToQuote(qCurrent + 1));
+  document.getElementById('qPrev').addEventListener('click', () => goToQuote(qCurrent - 1));
+  setInterval(() => goToQuote(qCurrent + 1), 6000);
+
+  // ── SCROLL TO TOP ──
+  document.getElementById('scrollTop').addEventListener('click', () => window.scrollTo({ top: 0, behavior: 'smooth' }));
+
+  // ── NAV DROPDOWN (close on outside click) ──
+  document.addEventListener('click', (e) => {
+    if (!e.target.closest('.nav-dropdown')) {
+      document.querySelectorAll('.nav-dropdown').forEach(d => d.classList.remove('open'));
+    }
+  });
+  document.querySelectorAll('.nav-dropdown-toggle').forEach(toggle => {
+    toggle.addEventListener('click', (e) => {
+      e.preventDefault();
+      const parent = toggle.closest('.nav-dropdown');
+      document.querySelectorAll('.nav-dropdown').forEach(d => { if (d !== parent) d.classList.remove('open'); });
+      parent.classList.toggle('open');
+    });
+  });
+
+  // ── LOADING SCREEN ──
+  (function() {
+    const screen = document.getElementById('loadingScreen');
+    const bar = document.getElementById('loadingBar');
+    const pct = document.getElementById('loadingPercent');
+    let progress = 0;
+    const interval = setInterval(() => {
+      progress += Math.random() * 18;
+      if (progress > 100) progress = 100;
+      bar.style.width = progress + '%';
+      pct.textContent = Math.floor(progress) + '%';
+      if (progress === 100) {
+        clearInterval(interval);
+        setTimeout(() => {
+          screen.classList.add('loaded');
+          // Show welcome popup after loading
+          setTimeout(showWelcomePopup, 600);
+        }, 400);
+      }
+    }, 120);
+  })();
+
+  // ── WELCOME POPUP ──
+  function showWelcomePopup() {
+    const overlay = document.getElementById('welcomeOverlay');
+    const popup = document.getElementById('welcomePopup');
+    overlay.classList.add('active');
+    popup.classList.add('active');
+  }
+  function closeWelcomePopup() {
+    document.getElementById('welcomeOverlay').classList.remove('active');
+    document.getElementById('welcomePopup').classList.remove('active');
+  }
+  document.getElementById('welcomeClose').addEventListener('click', closeWelcomePopup);
+  document.getElementById('welcomeOverlay').addEventListener('click', closeWelcomePopup);
+  document.getElementById('welcomeCtaBtn').addEventListener('click', closeWelcomePopup);
+
+  // ── APPROACH TIMELINE SCROLL ANIMATION ──
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('visible'); });
+  }, { threshold: 0.2 });
+  document.querySelectorAll('.approach-node').forEach(n => observer.observe(n));
+  </script>
+</body>
+</html>
