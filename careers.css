@@ -127,7 +127,11 @@ body { font-family: var(--ff-body); color: var(--text); background: var(--white)
 .dropdown-item span { font-family: var(--ff-cond); font-weight: 700; font-size: .93rem; letter-spacing: .02em; }
 .dropdown-item small { font-size: .77rem; color: var(--text-light); }
 
-.hamburger { display: none; flex-direction: column; gap: 5px; background: none; border: none; cursor: pointer; padding: 4px; }
+.nav-logo-img {
+  height: 42px; width: 42px; border-radius: 8px; object-fit: cover;
+}
+
+.hamburger { display: none; flex-direction: column; gap: 5px; background: none; border: none; cursor: pointer; padding: 8px; min-width: 44px; min-height: 44px; justify-content: center; align-items: center; }
 .hamburger span { display: block; width: 24px; height: 2px; background: var(--white); border-radius: 2px; transition: var(--trans); }
 
 .mobile-menu {
@@ -381,6 +385,8 @@ body { font-family: var(--ff-body); color: var(--text); background: var(--white)
   .footer-brand { grid-column: 1 / -1; }
   .nav-links { display: none; }
   .hamburger { display: flex; }
+  /* Always show solid navbar on mobile so hamburger is visible */
+  .navbar { background: var(--navy); box-shadow: 0 4px 24px rgba(13,43,92,.35); }
 }
 
 @media (max-width: 600px) {
